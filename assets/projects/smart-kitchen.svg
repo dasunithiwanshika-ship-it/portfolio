@@ -46,7 +46,7 @@
   <path d="M 250 185 L 295 185" stroke="url(#cyan-glow)" stroke-width="2" stroke-dasharray="4 4" />
   <circle cx="272" cy="185" r="3" fill="#38bdf8" />
 
-  <!-- Node 2: Backend & ML Engine -->
+  <!-- Node 2: Backend &amp; ML Engine -->
   <g transform="translate(295, 80)">
     <rect width="230" height="215" rx="10" fill="rgba(30, 41, 59, 0.95)" stroke="rgba(56, 189, 248, 0.45)" stroke-width="1.5" />
     <rect x="0" y="0" width="230" height="4" rx="2" fill="url(#cyan-glow)" />
