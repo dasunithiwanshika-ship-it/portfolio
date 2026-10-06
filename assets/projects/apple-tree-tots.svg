@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="att-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e131d" />
+      <stop offset="100%" stop-color="#141a26" />
+    </linearGradient>
+    <linearGradient id="att-rose" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c97a82" />
+      <stop offset="100%" stop-color="#722f37" />
+    </linearGradient>
+    <pattern id="att-grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1" />
+    </pattern>
+  </defs>
+
+  <rect width="800" height="450" rx="14" fill="url(#att-bg)" />
+  <rect width="800" height="450" rx="14" fill="url(#att-grid)" />
+  <rect x="0.5" y="0.5" width="799" height="449" rx="13.5" stroke="rgba(255, 255, 255, 0.08)" />
+
+  <!-- Badge -->
+  <g transform="translate(40, 32)">
+    <rect width="210" height="26" rx="13" fill="rgba(201, 122, 130, 0.12)" stroke="rgba(201, 122, 130, 0.3)" />
+    <circle cx="13" cy="13" r="4" fill="#c97a82" />
+    <text x="25" y="17" fill="#e2a8af" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600" letter-spacing="0.5">COMMERCIAL WEB PLATFORM</text>
+  </g>
+
+  <!-- Browser Window Frame -->
+  <g transform="translate(60, 80)">
+    <rect width="680" height="240" rx="10" fill="rgba(20, 26, 38, 0.95)" stroke="rgba(255, 255, 255, 0.12)" />
+    
+    <!-- Browser Top Bar -->
+    <rect width="680" height="36" rx="10" fill="rgba(10, 14, 22, 0.9)" />
+    <circle cx="20" cy="18" r="4.5" fill="#ef4444" />
+    <circle cx="34" cy="18" r="4.5" fill="#f59e0b" />
+    <circle cx="48" cy="18" r="4.5" fill="#10b981" />
+    
+    <!-- Address Bar -->
+    <rect x="70" y="8" width="340" height="20" rx="5" fill="rgba(255, 255, 255, 0.06)" />
+    <text x="82" y="22" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="10">https://appletreetots.com</text>
+
+    <!-- Website Layout Schema Inside -->
+    <!-- Nav Bar Inside Window -->
+    <rect x="20" y="52" width="640" height="28" rx="4" fill="rgba(255, 255, 255, 0.04)" />
+    <text x="35" y="70" fill="#f8fafc" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="12">Apple Tree Tots</text>
+    <text x="470" y="70" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">Programs • Gallery • Contact</text>
+
+    <!-- Hero Content Block Inside Window -->
+    <rect x="20" y="90" width="360" height="115" rx="6" fill="rgba(201, 122, 130, 0.08)" stroke="rgba(201, 122, 130, 0.2)" />
+    <text x="36" y="120" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="15">Nurturing Early Childhood Education</text>
+    <text x="36" y="142" fill="#cbd5e1" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">Responsive business web platform designed for parents &amp; staff</text>
+    <rect x="36" y="160" width="100" height="26" rx="13" fill="#c97a82" />
+    <text x="56" y="177" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="10">Learn More</text>
+
+    <!-- Right Side Cards Inside Window -->
+    <rect x="400" y="90" width="260" height="52" rx="6" fill="rgba(255, 255, 255, 0.03)" stroke="rgba(255, 255, 255, 0.08)" />
+    <text x="415" y="112" fill="#e2e8f0" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="11">Program Curriculums</text>
+    <text x="415" y="128" fill="#64748b" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5">Interactive activity schedule</text>
+
+    <rect x="400" y="152" width="260" height="53" rx="6" fill="rgba(255, 255, 255, 0.03)" stroke="rgba(255, 255, 255, 0.08)" />
+    <text x="415" y="174" fill="#e2e8f0" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="11">Parent Inquiries &amp; Admissions</text>
+    <text x="415" y="190" fill="#64748b" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5">Direct contact &amp; enrollment forms</text>
+  </g>
+
+  <!-- Bottom Terminal Execution Bar -->
+  <g transform="translate(60, 340)">
+    <rect width="680" height="75" rx="8" fill="rgba(2, 6, 23, 0.9)" stroke="rgba(255, 255, 255, 0.08)" />
+    <circle cx="24" cy="20" r="4" fill="#ef4444" />
+    <circle cx="38" cy="20" r="4" fill="#f59e0b" />
+    <circle cx="52" cy="20" r="4" fill="#10b981" />
+    <text x="74" y="24" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="11">apple_tree_tots_repo/index.html</text>
+    <text x="24" y="52" fill="#34d399" font-family="'JetBrains Mono', monospace" font-size="11.5">> [DEPLOYED] Production business website • Responsive mobile-first UI</text>
+  </g>
+</svg>

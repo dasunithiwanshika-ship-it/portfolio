@@ -1053,44 +1053,6 @@ img, svg {
   color: #92400e;
 }
 
-/* Visual Editorial Graphic for Apple Tree Tots */
-.visual-editorial-card {
-  background: #1c212a;
-}
-
-.editorial-art-block {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  min-height: 240px;
-  width: 100%;
-  padding: 1.5rem;
-}
-
-.art-badge {
-  font-size: 0.65rem;
-  color: #f9a8d4;
-  letter-spacing: 0.08em;
-}
-
-.art-big-text {
-  font-size: 1.75rem;
-  color: #ffffff;
-  display: block;
-  margin-bottom: 0.5rem;
-}
-
-.art-caption {
-  font-size: 0.75rem;
-  color: #94a3b8;
-}
-
-.art-timeline {
-  font-size: 0.7rem;
-  color: #64748b;
-}
-
 /* --------------------------------------------------------------------------
    07. Real-World Editorial Grid
    -------------------------------------------------------------------------- */
@@ -1201,6 +1163,12 @@ img, svg {
   }
 }
 
+@media (min-width: 1024px) {
+  .skills-editorial-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .skill-domain-card {
   background: var(--bg-card);
   border: 1px solid var(--border-hairline);
@@ -1208,6 +1176,8 @@ img, svg {
   padding: 2rem;
   box-shadow: var(--shadow-subtle);
   transition: all var(--transition-base);
+  display: flex;
+  flex-direction: column;
 }
 
 .skill-domain-card:hover {
