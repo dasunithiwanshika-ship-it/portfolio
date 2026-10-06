@@ -41,7 +41,10 @@ portfolio/
 ## 🚀 Key Projects Featured
 
 1. **Smart Kitchen Inventory & Recipe Assistant** *(Currently Building — Major AI App)*
-   - AI-driven kitchen stock monitoring and zero-waste recipe recommendation.
+   - Full-stack AI system for real-time pantry tracking (HTML5-QRCode), expiry management, and ML-powered zero-waste recipe recommendation.
+   - **Frontend**: React 19, TypeScript, Vite, Tailwind CSS, Lucide Icons, Canvas Confetti, HTML5-QRCode
+   - **Backend**: Python 3.13, FastAPI, SQLAlchemy 2.0, Pydantic v2, Scikit-Learn, Pandas, NumPy, Bcrypt, Pytest
+   - **Database**: SQLite (default local zero-config) / PostgreSQL (production ready)
    - [Repository](https://github.com/dasunithiwanshika-ship-it/Smart-Kitchen-Inventory-Recipe-Assistant)
 2. **Telecom Network Anomaly & Fault-Risk Detection** *(In Progress)*
    - Time-series KPI preprocessing, exploratory analysis, and ML anomaly classification using public telecom KPI benchmark datasets.

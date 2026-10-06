@@ -24,62 +24,67 @@
 
   <!-- Title Pill -->
   <g transform="translate(40, 36)">
-    <rect width="180" height="28" rx="14" fill="rgba(6, 182, 212, 0.12)" stroke="rgba(6, 182, 212, 0.3)" />
+    <rect width="260" height="28" rx="14" fill="rgba(6, 182, 212, 0.12)" stroke="rgba(6, 182, 212, 0.3)" />
     <circle cx="14" cy="14" r="4" fill="#06b6d4" />
-    <text x="26" y="18" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" letter-spacing="0.5">CURRENT MAJOR AI APP</text>
+    <text x="26" y="18" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" letter-spacing="0.5">REACT 19 + FASTAPI + ML</text>
   </g>
 
   <!-- Architecture Flow -->
-  <!-- Node 1: Pantry Data -->
-  <g transform="translate(60, 110)">
-    <rect width="180" height="130" rx="10" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(255, 255, 255, 0.12)" />
-    <text x="20" y="32" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="11">01 / INPUT LAYER</text>
-    <text x="20" y="58" fill="#f8fafc" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="15">Kitchen Inventory</text>
-    <text x="20" y="80" fill="#64748b" font-family="'Plus Jakarta Sans', sans-serif" font-size="12">Pantry stock records</text>
-    <text x="20" y="98" fill="#64748b" font-family="'Plus Jakarta Sans', sans-serif" font-size="12">Ingredient shelf-life</text>
-    <text x="20" y="116" fill="#06b6d4" font-family="'JetBrains Mono', monospace" font-size="11">Expiry tracking</text>
+  <!-- Node 1: Frontend Client -->
+  <g transform="translate(50, 95)">
+    <rect width="200" height="185" rx="10" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(255, 255, 255, 0.12)" />
+    <text x="18" y="28" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="11">01 / FRONTEND CLIENT</text>
+    <text x="18" y="52" fill="#f8fafc" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="14">React 19 &amp; TypeScript</text>
+    <text x="18" y="76" fill="#cbd5e1" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">• Vite + Tailwind CSS</text>
+    <text x="18" y="96" fill="#cbd5e1" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">• HTML5-QRCode Scanner</text>
+    <text x="18" y="116" fill="#cbd5e1" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">• Lucide Icons &amp; UI Confetti</text>
+    <text x="18" y="136" fill="#cbd5e1" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">• Real-time inventory sync</text>
+    <text x="18" y="164" fill="#06b6d4" font-family="'JetBrains Mono', monospace" font-size="11">Barcode / Web Client</text>
   </g>
 
   <!-- Flow Connector 1 -->
-  <path d="M 240 175 L 300 175" stroke="url(#cyan-glow)" stroke-width="2" stroke-dasharray="4 4" />
-  <circle cx="270" cy="175" r="3" fill="#38bdf8" />
+  <path d="M 250 185 L 295 185" stroke="url(#cyan-glow)" stroke-width="2" stroke-dasharray="4 4" />
+  <circle cx="272" cy="185" r="3" fill="#38bdf8" />
 
-  <!-- Node 2: AI Optimization Core -->
-  <g transform="translate(300, 90)">
-    <rect width="200" height="170" rx="10" fill="rgba(30, 41, 59, 0.95)" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1.5" />
-    <rect x="0" y="0" width="200" height="4" rx="2" fill="url(#cyan-glow)" />
-    <text x="20" y="32" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="11">02 / AI ASSISTANT CORE</text>
-    <text x="20" y="58" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="16">Recipe Intelligence</text>
-    <text x="20" y="82" fill="#cbd5e1" font-family="'Plus Jakarta Sans', sans-serif" font-size="12">• Dynamic match ranking</text>
-    <text x="20" y="102" fill="#cbd5e1" font-family="'Plus Jakarta Sans', sans-serif" font-size="12">• Zero-waste suggestion</text>
-    <text x="20" y="122" fill="#cbd5e1" font-family="'Plus Jakarta Sans', sans-serif" font-size="12">• Missing item detection</text>
-    <text x="20" y="148" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="11">Prompt & Rule Engine</text>
+  <!-- Node 2: Backend & ML Engine -->
+  <g transform="translate(295, 80)">
+    <rect width="230" height="215" rx="10" fill="rgba(30, 41, 59, 0.95)" stroke="rgba(56, 189, 248, 0.45)" stroke-width="1.5" />
+    <rect x="0" y="0" width="230" height="4" rx="2" fill="url(#cyan-glow)" />
+    <text x="18" y="28" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="11">02 / FASTAPI + ML ENGINE</text>
+    <text x="18" y="52" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="15">Python 3.13 &amp; Scikit-Learn</text>
+    <text x="18" y="76" fill="#cbd5e1" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">• Async FastAPI Endpoints</text>
+    <text x="18" y="96" fill="#cbd5e1" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">• Pydantic v2 validation</text>
+    <text x="18" y="116" fill="#cbd5e1" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">• Scikit-Learn recipe ranking</text>
+    <text x="18" y="136" fill="#cbd5e1" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">• Pandas / NumPy processing</text>
+    <text x="18" y="156" fill="#cbd5e1" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">• Bcrypt auth + Pytest suite</text>
+    <text x="18" y="188" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="11">Zero-Waste ML Ranking</text>
   </g>
 
   <!-- Flow Connector 2 -->
-  <path d="M 500 175 L 560 175" stroke="url(#emerald-glow)" stroke-width="2" stroke-dasharray="4 4" />
-  <circle cx="530" cy="175" r="3" fill="#10b981" />
+  <path d="M 525 185 L 565 185" stroke="url(#emerald-glow)" stroke-width="2" stroke-dasharray="4 4" />
+  <circle cx="545" cy="185" r="3" fill="#10b981" />
 
-  <!-- Node 3: Output Assistant -->
-  <g transform="translate(560, 110)">
-    <rect width="180" height="130" rx="10" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(255, 255, 255, 0.12)" />
-    <text x="20" y="32" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="11">03 / OUTPUT & ACTION</text>
-    <text x="20" y="58" fill="#f8fafc" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="15">Adaptive Recipes</text>
-    <text x="20" y="80" fill="#64748b" font-family="'Plus Jakarta Sans', sans-serif" font-size="12">Step-by-step guidance</text>
-    <text x="20" y="98" fill="#64748b" font-family="'Plus Jakarta Sans', sans-serif" font-size="12">Automated grocery list</text>
-    <text x="20" y="116" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="11">Waste minimization</text>
+  <!-- Node 3: Database Persistence -->
+  <g transform="translate(565, 95)">
+    <rect width="185" height="185" rx="10" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(255, 255, 255, 0.12)" />
+    <text x="18" y="28" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="11">03 / PERSISTENCE</text>
+    <text x="18" y="52" fill="#f8fafc" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="14">SQLAlchemy 2.0</text>
+    <text x="18" y="76" fill="#cbd5e1" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">• SQLite zero-config</text>
+    <text x="18" y="96" fill="#cbd5e1" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">• PostgreSQL production</text>
+    <text x="18" y="116" fill="#cbd5e1" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">• Pantry stock ledger</text>
+    <text x="18" y="136" fill="#cbd5e1" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">• User recipe profiles</text>
+    <text x="18" y="164" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="11">Relational Storage</text>
   </g>
 
   <!-- Bottom Terminal Status Bar -->
-  <g transform="translate(60, 310)">
-    <rect width="680" height="85" rx="8" fill="rgba(2, 6, 23, 0.9)" stroke="rgba(255, 255, 255, 0.08)" />
-    <!-- Terminal header dots -->
+  <g transform="translate(50, 320)">
+    <rect width="700" height="85" rx="8" fill="rgba(2, 6, 23, 0.9)" stroke="rgba(255, 255, 255, 0.08)" />
     <circle cx="24" cy="22" r="4" fill="#ef4444" />
     <circle cx="38" cy="22" r="4" fill="#f59e0b" />
     <circle cx="52" cy="22" r="4" fill="#10b981" />
-    <text x="74" y="26" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="11">pipeline_execution.log</text>
+    <text x="74" y="26" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="11">fastapi_server.py [Python 3.13] + React 19 Client</text>
     
-    <text x="24" y="54" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="12">$ python -m kitchen_ai.engine --evaluate-pantry --threshold=0.85</text>
-    <text x="24" y="74" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="12">> [OK] Stock indexed: 42 ingredients | Matching active | Recipe rank generated</text>
+    <text x="24" y="54" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="12">INFO: Uvicorn running on http://127.0.0.1:8000 (FastAPI v0.115 + Pydantic v2 + Scikit-Learn)</text>
+    <text x="24" y="74" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="12">> [200 OK] POST /api/v1/recipes/recommend - Matched 12 recipes (0 wasted items)</text>
   </g>
 </svg>
