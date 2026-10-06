@@ -7,7 +7,7 @@
   
   <!-- SEO & Social Meta -->
   <meta name="description" content="Portfolio of Dasuni Thiwanshika — AI & Machine Learning Undergraduate building intelligent, evidence-backed solutions for real-world problems." />
-  <meta name="keywords" content="Dasuni Thiwanshika, AI Engineer, Machine Learning Engineer, Data Science, Python, NLP, FastAPI, React 19, Portfolio" />
+  <meta name="keywords" content="Dasuni Thiwanshika, AI Engineer, Machine Learning Engineer, Data Science, Python, NLP, FastAPI, React 19, Streamlit, Portfolio" />
   <meta name="author" content="Dasuni Thiwanshika" />
   
   <meta property="og:title" content="Dasuni Thiwanshika — AI & Machine Learning Portfolio" />
@@ -210,16 +210,16 @@
           <div class="head-kicker font-mono">01 / SELECTED WORK</div>
           <h2 class="head-serif-title">Featured Case Studies</h2>
           <p class="head-description">
-            A comprehensive showcase structured across AI/ML engineering, real-world data platforms, full-stack applications, and embedded hardware.
+            A comprehensive showcase structured across AI/ML engineering, real-world data automation, commercial web platforms, and embedded hardware.
           </p>
         </div>
 
         <!-- Filter Bar -->
         <div class="editorial-filter-bar" role="toolbar" aria-label="Project Filter">
-          <button class="filter-tab active" data-filter="all">All Projects <span class="tab-count font-mono">7</span></button>
+          <button class="filter-tab active" data-filter="all">All Projects <span class="tab-count font-mono">8</span></button>
           <button class="filter-tab" data-filter="aiml">AI / ML <span class="tab-count font-mono">3</span></button>
-          <button class="filter-tab" data-filter="realworld">Real-World <span class="tab-count font-mono">3</span></button>
-          <button class="filter-tab" data-filter="apps">Applications <span class="tab-count font-mono">4</span></button>
+          <button class="filter-tab" data-filter="realworld">Real-World <span class="tab-count font-mono">4</span></button>
+          <button class="filter-tab" data-filter="apps">Applications <span class="tab-count font-mono">5</span></button>
           <button class="filter-tab" data-filter="hardware">Hardware <span class="tab-count font-mono">1</span></button>
         </div>
 
@@ -239,7 +239,7 @@
               <!-- Right: Editorial Content -->
               <div class="case-study-body">
                 <div class="case-meta-header font-mono">
-                  <span class="case-index">01 — AI / ML ENGINEERING</span>
+                  <span class="case-index">01 — FEATURED AI / ML</span>
                   <span class="case-status-badge status-progress">In Progress</span>
                 </div>
 
@@ -298,7 +298,7 @@
               <!-- Right: Editorial Content -->
               <div class="case-study-body">
                 <div class="case-meta-header font-mono">
-                  <span class="case-index">02 — AI APPLICATION</span>
+                  <span class="case-index">02 — FEATURED AI APPLICATION</span>
                   <span class="case-status-badge status-building">Currently Building</span>
                 </div>
 
@@ -410,53 +410,115 @@
             </div>
           </article>
 
-          <!-- CASE STUDY 04: Sharentals — AI, Data Automation & Web Platform -->
-          <article class="case-study-card" data-category="realworld apps" id="project-sharentals">
+          <!-- CASE STUDY 04: Sharentals — Fines & Toll Data Automation System -->
+          <article class="case-study-card" data-category="realworld apps" id="project-sharentals-automation">
             <div class="case-study-grid">
               
               <!-- Left: Project Visual / Blueprint -->
               <div class="case-study-visual">
-                <img src="assets/projects/sharentals-pipeline.svg" alt="Architecture of Sharentals Web Platform and Data Automation" class="case-study-img" loading="lazy" />
-                <div class="visual-pill-tag font-mono">REACT + DATA AUTOMATION</div>
+                <img src="assets/projects/sharentals-automation.svg" alt="Architecture of Sharentals Fines and Toll Data Automation System" class="case-study-img" loading="lazy" />
+                <div class="visual-pill-tag font-mono">STREAMLIT + PANDAS ETL</div>
               </div>
 
               <!-- Right: Editorial Content -->
               <div class="case-study-body">
                 <div class="case-meta-header font-mono">
-                  <span class="case-index">04 — REAL-WORLD PLATFORM</span>
+                  <span class="case-index">04 — REAL-WORLD DATA AUTOMATION</span>
                   <span class="case-status-badge status-applied">Applied Industry Solution</span>
                 </div>
 
-                <h3 class="case-title">Sharentals — AI, Data Automation &amp; Web Platform</h3>
-                <p class="case-tagline">Integrated React/Vite client platform and Python/Pandas data automation pipeline reconciling high-frequency toll charges with booking intervals.</p>
+                <h3 class="case-title">Sharentals — Fines &amp; Toll Data Automation System</h3>
+                <p class="case-tagline">Streamlit application and automated Python ETL pipeline reconciling Linkt toll feeds with 365/iStarr booking intervals and calculating administrative fees.</p>
 
                 <div class="case-breakdown-box">
                   <div class="breakdown-row">
-                    <span class="breakdown-label font-mono">BUSINESS PROBLEM</span>
-                    <p class="breakdown-text">High-volume operational Linkt toll charges and vehicle booking feeds from 365/iStarr had inconsistent registration formatting and duplicate timestamps, making manual toll attribution error-prone.</p>
+                    <span class="breakdown-label font-mono">THE PROBLEM</span>
+                    <p class="breakdown-text">Manual cross-referencing of continuous Linkt toll charges against 365/iStarr vehicle reservations resulted in billing leakage, duplicate entries, and non-standardized registration mismatches.</p>
                   </div>
                   <div class="breakdown-row">
-                    <span class="breakdown-label font-mono">THE COMBINED SOLUTION</span>
-                    <p class="breakdown-text">Engineered both the modern React + Vite client web platform for fleet bookings AND an automated Python/Pandas data pipeline executing RegEx plate normalization, interval duplicate matching, and structured master data reconciliation.</p>
+                    <span class="breakdown-label font-mono">WHAT I BUILT</span>
+                    <p class="breakdown-text">Engineered a complete automated toll processing system with dual execution modes (Initial Setup &amp; Daily Run). Developed custom modules for RegEx registration normalization, interval booking matching, time-window duplicate detection, financial fee calculation, and multi-sheet Excel generation.</p>
                   </div>
                   <div class="breakdown-row">
-                    <span class="breakdown-label font-mono">DELIVERABLES</span>
+                    <span class="breakdown-label font-mono">KEY IMPLEMENTATION</span>
                     <ul class="breakdown-list">
-                      <li>Modern React + Vite responsive web platform for rental reservations</li>
-                      <li>Automated transaction matching between toll feeds and active trip intervals</li>
-                      <li>Fleet availability analysis and automated idle-vehicle reporting</li>
+                      <li>Fast multi-format file ingestion utilizing Python-Calamine &amp; Pandas</li>
+                      <li>Automated trip-to-booking matching engine and duplicate detection</li>
+                      <li>Multi-sheet Excel report generator (Master Data, Duplicates, Unmatched, Financial Summary) via Openpyxl</li>
+                      <li>Interactive Streamlit dashboard and CLI execution mode validated with Pytest</li>
                     </ul>
                   </div>
                 </div>
 
                 <div class="case-tech-pills font-mono">
-                  <span class="pill">React</span>
-                  <span class="pill">Vite</span>
                   <span class="pill">Python</span>
+                  <span class="pill">Streamlit</span>
                   <span class="pill">Pandas</span>
-                  <span class="pill">Data Automation</span>
-                  <span class="pill">ETL Pipelines</span>
-                  <span class="pill">Fleet Analytics</span>
+                  <span class="pill">Python-Calamine</span>
+                  <span class="pill">Openpyxl</span>
+                  <span class="pill">Duplicate Detection</span>
+                  <span class="pill">ETL Automation</span>
+                  <span class="pill">Pytest</span>
+                </div>
+
+                <div class="case-actions-row">
+                  <a href="https://github.com/dasunithiwanshika-ship-it/sharentals-ai-ml.git" target="_blank" rel="noopener noreferrer" class="btn-case-action font-mono">
+                    <svg class="icon-mini" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    <span>View Repository on GitHub &rarr;</span>
+                  </a>
+                  <span class="evidence-subtext font-mono">Streamlit App &amp; Python Automation Codebase</span>
+                </div>
+              </div>
+
+            </div>
+          </article>
+
+          <!-- CASE STUDY 05: Sharentals — Car Rental Web Platform -->
+          <article class="case-study-card" data-category="realworld apps" id="project-sharentals-web">
+            <div class="case-study-grid">
+              
+              <!-- Left: Project Visual / Blueprint -->
+              <div class="case-study-visual">
+                <img src="assets/projects/sharentals-website.svg" alt="Architecture of Sharentals Web Platform" class="case-study-img" loading="lazy" />
+                <div class="visual-pill-tag font-mono">REACT 19 + VITE + TAILWIND</div>
+              </div>
+
+              <!-- Right: Editorial Content -->
+              <div class="case-study-body">
+                <div class="case-meta-header font-mono">
+                  <span class="case-index">05 — REAL-WORLD WEB PLATFORM</span>
+                  <span class="case-status-badge status-completed">Production Web App</span>
+                </div>
+
+                <h3 class="case-title">Sharentals — Car Rental Web Platform</h3>
+                <p class="case-tagline">High-performance responsive web application built with React 19, Vite, and Tailwind CSS v4 for fleet browsing and booking inquiries.</p>
+
+                <div class="case-breakdown-box">
+                  <div class="breakdown-row">
+                    <span class="breakdown-label font-mono">THE PROBLEM</span>
+                    <p class="breakdown-text">The rental business needed a modern, responsive web application to showcase fleet availability, display competitive rental pricing, and handle direct customer reservation inquiries.</p>
+                  </div>
+                  <div class="breakdown-row">
+                    <span class="breakdown-label font-mono">WHAT I BUILT</span>
+                    <p class="breakdown-text">Developed a modular React 19 application utilizing Vite and Tailwind CSS v4. Designed 9 responsive component sections including fleet promotions, vehicle categories, booking inquiry forms, and step-by-step rental workflows.</p>
+                  </div>
+                  <div class="breakdown-row">
+                    <span class="breakdown-label font-mono">KEY IMPLEMENTATION</span>
+                    <ul class="breakdown-list">
+                      <li>Modern component hierarchy: Hero, Services, HowItWorks, Promotions, Inquiry, Contact</li>
+                      <li>Interactive reservation intake form with client-side validation</li>
+                      <li>Lightning-fast Vite 8 build tooling and Tailwind CSS v4 responsive styling</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="case-tech-pills font-mono">
+                  <span class="pill">React 19</span>
+                  <span class="pill">Vite</span>
+                  <span class="pill">Tailwind CSS v4</span>
+                  <span class="pill">JavaScript (ES Modules)</span>
+                  <span class="pill">Responsive UI</span>
+                  <span class="pill">Component Architecture</span>
                 </div>
 
                 <div class="case-actions-row">
@@ -464,14 +526,14 @@
                     <svg class="icon-mini" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
                     <span>View Website Repository &rarr;</span>
                   </a>
-                  <span class="evidence-subtext font-mono">Web Platform + Applied Data Pipeline</span>
+                  <span class="evidence-subtext font-mono">Production React 19 Codebase</span>
                 </div>
               </div>
 
             </div>
           </article>
 
-          <!-- CASE STUDY 05: Apple Tree Tots — Business Website -->
+          <!-- CASE STUDY 06: Apple Tree Tots — Business Website -->
           <article class="case-study-card" data-category="realworld apps" id="project-appletree">
             <div class="case-study-grid">
               
@@ -484,7 +546,7 @@
               <!-- Right: Editorial Content -->
               <div class="case-study-body">
                 <div class="case-meta-header font-mono">
-                  <span class="case-index">05 — REAL-WORLD TECHNOLOGY</span>
+                  <span class="case-index">06 — REAL-WORLD TECHNOLOGY</span>
                   <span class="case-status-badge status-completed">Production Website</span>
                 </div>
 
@@ -497,7 +559,7 @@
                     <p class="breakdown-text">The organization required a modern, accessible web presence to showcase early childhood curriculums, facilitate parent inquiries, and communicate brand values.</p>
                   </div>
                   <div class="breakdown-row">
-                    <span class="breakdown-label font-mono">ENGINEERING SOLUTION</span>
+                    <span class="breakdown-label font-mono">WHAT I BUILT</span>
                     <p class="breakdown-text">Developed a clean, responsive web platform featuring structured program information, interactive admission inquiry workflows, mobile-optimized navigation, and SEO best practices.</p>
                   </div>
                   <div class="breakdown-row">
@@ -531,7 +593,7 @@
             </div>
           </article>
 
-          <!-- CASE STUDY 06: FixNow -->
+          <!-- CASE STUDY 07: FixNow -->
           <article class="case-study-card" data-category="apps" id="project-fixnow">
             <div class="case-study-grid">
               
@@ -544,7 +606,7 @@
               <!-- Right: Editorial Content -->
               <div class="case-study-body">
                 <div class="case-meta-header font-mono">
-                  <span class="case-index">06 — SOFTWARE &amp; MOBILE</span>
+                  <span class="case-index">07 — SOFTWARE &amp; MOBILE</span>
                   <span class="case-status-badge status-completed">Full-Stack Application</span>
                 </div>
 
@@ -557,7 +619,7 @@
                     <p class="breakdown-text">Disorganized facility maintenance workflows cause communication bottlenecks between occupants and service technicians.</p>
                   </div>
                   <div class="breakdown-row">
-                    <span class="breakdown-label font-mono">THE ARCHITECTURE</span>
+                    <span class="breakdown-label font-mono">WHAT I BUILT</span>
                     <p class="breakdown-text">Built a responsive cross-platform mobile client with React Native and Expo, connected to a Node.js/Express REST API with cloud MongoDB Atlas database clustering.</p>
                   </div>
                   <div class="breakdown-row">
@@ -587,7 +649,7 @@
             </div>
           </article>
 
-          <!-- CASE STUDY 07: Smart Medication Reminder -->
+          <!-- CASE STUDY 08: Smart Medication Reminder -->
           <article class="case-study-card" data-category="hardware" id="project-smart-med">
             <div class="case-study-grid">
               
@@ -600,7 +662,7 @@
               <!-- Right: Editorial Content -->
               <div class="case-study-body">
                 <div class="case-meta-header font-mono">
-                  <span class="case-index">07 — HARDWARE &amp; AUTOMATION</span>
+                  <span class="case-index">08 — HARDWARE &amp; AUTOMATION</span>
                   <span class="case-status-badge status-applied">Hardware Prototype</span>
                 </div>
 
@@ -613,7 +675,7 @@
                     <p class="breakdown-text">Strict prescription regimens are easily missed by elderly or busy patients, necessitating fail-safe local and remote notifications.</p>
                   </div>
                   <div class="breakdown-row">
-                    <span class="breakdown-label font-mono">THE SOLUTION</span>
+                    <span class="breakdown-label font-mono">WHAT I BUILT</span>
                     <p class="breakdown-text">Engineered a standalone embedded device running Arduino C/C++ control logic, interfaced with an I2C LCD screen, audio buzzer, and a GSM cellular module for remote SMS dispatch on missed doses.</p>
                   </div>
                   <div class="breakdown-row">
@@ -657,7 +719,7 @@
           <div class="head-kicker font-mono">02 / PROVEN IMPACT</div>
           <h2 class="head-serif-title">Real-World Problem Solving</h2>
           <p class="head-description">
-            Applying machine learning, structured data engineering, and business strategy to resolve practical operational challenges.
+            Applying structured data engineering, automated business pipelines, and production web platforms to resolve practical operational challenges.
           </p>
         </div>
 
@@ -665,28 +727,28 @@
           
           <div class="realworld-panel">
             <div class="panel-header font-mono">
-              <span class="panel-tag">AI, DATA AUTOMATION &amp; WEB</span>
+              <span class="panel-tag">ENTERPRISE DATA AUTOMATION</span>
               <span class="panel-badge">Applied Work</span>
             </div>
-            <h3 class="panel-title">Sharentals — AI, Data Automation &amp; Web Platform</h3>
+            <h3 class="panel-title">Sharentals — Fines &amp; Toll Processing System</h3>
             <p class="panel-desc">
-              Combined the design and delivery of the React + Vite web platform with an automated Python pipeline reconciling unstructured Linkt toll charges with 365/iStarr reservations.
+              Eliminated manual accounting overhead by architecting an automated Python/Streamlit pipeline that ingests Linkt toll feeds, matches 365/iStarr booking intervals, and generates multi-sheet financial reconciliation workbooks.
             </p>
             <div class="panel-specs font-mono">
               <div class="spec-item">
                 <span class="spec-k">CORE VALUE:</span>
-                <span class="spec-v">100% automated trip-to-toll reconciliation &amp; reservation catalog</span>
+                <span class="spec-v">Automated trip-to-toll reconciliation &amp; fee calculation</span>
               </div>
               <div class="spec-item">
                 <span class="spec-k">DELIVERABLES:</span>
-                <span class="spec-v">Clean master data tables, idle fleet reporting &amp; React client</span>
+                <span class="spec-v">Streamlit app, CLI tool &amp; multi-sheet Openpyxl workbooks</span>
               </div>
             </div>
           </div>
 
           <div class="realworld-panel">
             <div class="panel-header font-mono">
-              <span class="panel-tag">BUSINESS WEB PLATFORM &amp; STRATEGY</span>
+              <span class="panel-tag">COMMERCIAL WEB PLATFORM &amp; STRATEGY</span>
               <span class="panel-badge">2025 — 2026</span>
             </div>
             <h3 class="panel-title">Apple Tree Tots — Business Website &amp; Analytics</h3>
@@ -761,6 +823,8 @@
               <span class="skill-tag">Data Visualization</span>
               <span class="skill-tag">Data Processing</span>
               <span class="skill-tag">Data Automation</span>
+              <span class="skill-tag">Python-Calamine</span>
+              <span class="skill-tag">Openpyxl</span>
               <span class="skill-tag">Business Data Analysis</span>
             </div>
           </div>
@@ -775,6 +839,7 @@
               <span class="skill-tag">AI Applications</span>
               <span class="skill-tag">AI Automation</span>
               <span class="skill-tag">Data Automation</span>
+              <span class="skill-tag">Streamlit</span>
               <span class="skill-tag">AI-Assisted Workflows</span>
               <span class="skill-tag">Intelligent Application Development</span>
             </div>
@@ -792,8 +857,10 @@
               <span class="skill-tag">Python</span>
               <span class="skill-tag">C</span>
               <span class="skill-tag">C++</span>
-              <span class="skill-tag">React</span>
+              <span class="skill-tag">React 19</span>
               <span class="skill-tag">React Native</span>
+              <span class="skill-tag">Vite</span>
+              <span class="skill-tag">Tailwind CSS</span>
               <span class="skill-tag">Node.js</span>
               <span class="skill-tag">Express.js</span>
               <span class="skill-tag">REST APIs</span>
@@ -813,6 +880,7 @@
               <span class="skill-tag">MongoDB Atlas</span>
               <span class="skill-tag">PostgreSQL</span>
               <span class="skill-tag">Supabase</span>
+              <span class="skill-tag">SQLite</span>
               <span class="skill-tag">MySQL</span>
             </div>
           </div>
@@ -830,6 +898,7 @@
               <span class="skill-tag">Google Colab</span>
               <span class="skill-tag">Expo</span>
               <span class="skill-tag">Arduino</span>
+              <span class="skill-tag">Pytest</span>
             </div>
           </div>
 

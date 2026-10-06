@@ -29,7 +29,8 @@ portfolio/
 │   │   ├── telecom-anomaly.svg
 │   │   ├── smart-kitchen.svg
 │   │   ├── fake-news.svg
-│   │   ├── sharentals-pipeline.svg
+│   │   ├── sharentals-automation.svg
+│   │   ├── sharentals-website.svg
 │   │   ├── apple-tree-tots.svg
 │   │   ├── fixnow-app.svg
 │   │   └── smart-medication.svg
@@ -57,23 +58,27 @@ portfolio/
    - **Stack**: Python, TensorFlow, PyTorch, TF-IDF, Word2Vec, Scikit-learn
    - [GitHub Repository](https://github.com/dasunithiwanshika-ship-it/fake-news-detector)
 
-### Real-World Technology
-4. **Sharentals — AI, Data Automation & Web Platform** *(Applied Industry Experience)*
-   - Integrated React + Vite client web platform combined with Python/Pandas ETL automation reconciling Linkt toll charges with 365/iStarr vehicle reservations.
-   - **Stack**: React, Vite, Python, Pandas, Data Automation, Fleet Analytics
-   - [Website Repository](https://github.com/dasunithiwanshika-ship-it/sharentals-website)
-5. **Apple Tree Tots — Business Website** *(Commercial Web Project)*
+### Real-World Technology & Automation
+4. **Sharentals — Fines & Toll Data Automation System** *(Applied Industry Automation)*
+   - Streamlit application and Python ETL automation pipeline ingesting Linkt toll feeds, matching 365/iStarr booking intervals, detecting duplicate events, calculating fees, and exporting multi-sheet Excel reports.
+   - **Stack**: Python, Streamlit, Pandas, Python-Calamine, Openpyxl, Pytest, CLI
+   - [GitHub Repository](https://github.com/dasunithiwanshika-ship-it/sharentals-ai-ml.git)
+5. **Sharentals — Car Rental Web Platform** *(Production Web Project)*
+   - Production React 19 & Vite web application styled with Tailwind CSS v4 featuring 9 modular component sections, reservation inquiry workflows, and rideshare fleet booking guides.
+   - **Stack**: React 19, Vite, Tailwind CSS v4, Modular Component Architecture
+   - [GitHub Repository](https://github.com/dasunithiwanshika-ship-it/sharentals-website)
+6. **Apple Tree Tots — Business Website** *(Commercial Web Project)*
    - Production business web platform developed for an early childhood organization, establishing digital branding, program visibility, and parent inquiry funnels.
    - **Stack**: HTML5, CSS3, JavaScript, Responsive Web Design, Campaign Analytics
    - [GitHub Repository](https://github.com/dasunithiwanshika-ship-it/apple-tree-tots-.git)
 
 ### Software / Applications
-6. **FixNow — Maintenance Reporting & Issue-Tracking** *(Application Dev)*
+7. **FixNow — Mobile Maintenance & Issue Tracking** *(Application Dev)*
    - Full-stack mobile platform built with React Native, Expo, Node.js, Express, and MongoDB Atlas.
    - **Stack**: React Native, Expo, Node.js, Express.js, MongoDB Atlas, REST APIs
 
 ### Hardware & Automation
-7. **Smart Medication Reminder** *(Hardware & Automation)*
+8. **Smart Medication Reminder** *(Hardware & Automation)*
    - Embedded prototype with Arduino MCU (C/C++), I2C LCD, audible alarms, and cellular GSM alert dispatch on missed schedules.
    - **Stack**: Arduino, C/C++, GSM Module, I2C LCD, Embedded Systems
    - [LinkedIn Video Demonstration](https://lnkd.in/p/gzZSuhcq)
@@ -83,11 +88,11 @@ portfolio/
 ## 🛠️ Technical Competencies
 
 - **AI & Machine Learning**: Python, Scikit-learn, TensorFlow, PyTorch, Machine Learning, Classification, Regression, Clustering, Anomaly Detection, NLP, TF-IDF, Word2Vec, Feature Engineering, Model Evaluation
-- **Data & Analytics**: Pandas, NumPy, Data Cleaning, Data Wrangling, EDA, Data Visualization, Data Processing, Data Automation, Business Data Analysis
-- **AI Applications & Automation**: AI Applications, AI Automation, Data Automation, AI-assisted workflows, Intelligent Application Development
-- **Software Development**: Java, JavaScript, Python, C, C++, React, React Native, Node.js, Express.js, REST APIs, HTML5, CSS3
-- **Databases**: MongoDB, MongoDB Atlas, PostgreSQL, Supabase, MySQL
-- **Tools & Platforms**: Git, GitHub, VS Code, Google Colab, Expo, Arduino
+- **Data & Analytics**: Pandas, NumPy, Data Cleaning, Data Wrangling, EDA, Data Visualization, Data Processing, Data Automation, Python-Calamine, Openpyxl, Business Data Analysis
+- **AI Applications & Automation**: AI Applications, AI Automation, Data Automation, Streamlit, AI-Assisted Workflows, Intelligent Application Development
+- **Software Development**: Java, JavaScript, Python, C, C++, React 19, React Native, Vite, Tailwind CSS, Node.js, Express.js, REST APIs, HTML5, CSS3
+- **Databases**: MongoDB, MongoDB Atlas, PostgreSQL, Supabase, SQLite, MySQL
+- **Tools & Platforms**: Git, GitHub, VS Code, Google Colab, Expo, Arduino, Pytest
 
 ---
 
@@ -98,7 +103,7 @@ This website is built with zero build dependencies (Vanilla HTML5, CSS3, JavaScr
 1. Push this repository to GitHub:
    ```bash
    git add .
-   git commit -m "Update portfolio case studies, technical competencies, and asset links"
+   git commit -m "Update portfolio with verified Sharentals repos and separated case studies"
    git push origin main
    ```
 2. In GitHub repository settings:
