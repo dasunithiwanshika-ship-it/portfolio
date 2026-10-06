@@ -1,24 +1,23 @@
 /**
- * Dasuni Thiwanshika — AI & ML Engineer Portfolio
- * Core Interactive Architecture & Canvas Computation Engine
+ * Dasuni Thiwanshika — AI & Machine Learning Portfolio
+ * Editorial Script Engine: Ambient Canvas, Filtering, Navigation & Clipboard
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  initBackgroundCanvas();
-  initProjectFiltering();
+  initAmbientCanvas();
+  initCaseStudyFiltering();
   initNavigation();
   initClipboardFeatures();
   initScrollSpy();
 });
 
 /* --------------------------------------------------------------------------
-   01. Subtle Ambient Node-Network Canvas Background
+   01. Subtle Ambient Background Particles / Grid
    -------------------------------------------------------------------------- */
-function initBackgroundCanvas() {
-  const canvas = document.getElementById('hero-matrix-canvas');
+function initAmbientCanvas() {
+  const canvas = document.getElementById('ambient-canvas');
   if (!canvas) return;
 
-  // Check prefers-reduced-motion
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     return;
   }
@@ -27,18 +26,17 @@ function initBackgroundCanvas() {
   let width = (canvas.width = window.innerWidth);
   let height = (canvas.height = window.innerHeight);
 
-  let mouse = { x: -1000, y: -1000, radius: 140 };
   let nodes = [];
-  const nodeCount = Math.min(Math.floor((width * height) / 18000), 55);
+  const nodeCount = Math.min(Math.floor((width * height) / 22000), 40);
 
-  class Node {
+  class SubtleNode {
     constructor() {
       this.x = Math.random() * width;
       this.y = Math.random() * height;
-      this.vx = (Math.random() - 0.5) * 0.45;
-      this.vy = (Math.random() - 0.5) * 0.45;
+      this.vx = (Math.random() - 0.5) * 0.35;
+      this.vy = (Math.random() - 0.5) * 0.35;
       this.radius = Math.random() * 1.5 + 1;
-      this.baseAlpha = Math.random() * 0.35 + 0.15;
+      this.alpha = Math.random() * 0.25 + 0.1;
     }
 
     update() {
@@ -47,23 +45,12 @@ function initBackgroundCanvas() {
 
       if (this.x < 0 || this.x > width) this.vx *= -1;
       if (this.y < 0 || this.y > height) this.vy *= -1;
-
-      // Mouse attraction / interaction
-      const dx = mouse.x - this.x;
-      const dy = mouse.y - this.y;
-      const dist = Math.sqrt(dx * dx + dy * dy);
-
-      if (dist < mouse.radius && dist > 0) {
-        const force = (mouse.radius - dist) / mouse.radius;
-        this.x -= (dx / dist) * force * 1.2;
-        this.y -= (dy / dist) * force * 1.2;
-      }
     }
 
     draw() {
       ctx.beginPath();
       ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-      ctx.fillStyle = `rgba(56, 189, 248, ${this.baseAlpha})`;
+      ctx.fillStyle = `rgba(114, 47, 55, ${this.alpha})`;
       ctx.fill();
     }
   }
@@ -71,12 +58,12 @@ function initBackgroundCanvas() {
   function initNodes() {
     nodes = [];
     for (let i = 0; i < nodeCount; i++) {
-      nodes.push(new Node());
+      nodes.push(new SubtleNode());
     }
   }
 
   function connectNodes() {
-    const maxDist = 130;
+    const maxDist = 140;
     for (let i = 0; i < nodes.length; i++) {
       for (let j = i + 1; j < nodes.length; j++) {
         const dx = nodes[i].x - nodes[j].x;
@@ -84,9 +71,9 @@ function initBackgroundCanvas() {
         const dist = Math.sqrt(dx * dx + dy * dy);
 
         if (dist < maxDist) {
-          const alpha = (1 - dist / maxDist) * 0.18;
-          ctx.strokeStyle = `rgba(56, 189, 248, ${alpha})`;
-          ctx.lineWidth = 0.8;
+          const alpha = (1 - dist / maxDist) * 0.12;
+          ctx.strokeStyle = `rgba(201, 122, 130, ${alpha})`;
+          ctx.lineWidth = 0.6;
           ctx.beginPath();
           ctx.moveTo(nodes[i].x, nodes[i].y);
           ctx.lineTo(nodes[j].x, nodes[j].y);
@@ -115,25 +102,12 @@ function initBackgroundCanvas() {
   initNodes();
   animate();
 
-  // Resize handler
   window.addEventListener('resize', () => {
     width = canvas.width = window.innerWidth;
     height = canvas.height = window.innerHeight;
     initNodes();
   });
 
-  // Track mouse
-  window.addEventListener('mousemove', (e) => {
-    mouse.x = e.clientX;
-    mouse.y = e.clientY;
-  });
-
-  window.addEventListener('mouseleave', () => {
-    mouse.x = -1000;
-    mouse.y = -1000;
-  });
-
-  // Pause animation when tab is inactive to save battery
   document.addEventListener('visibilitychange', () => {
     isPageVisible = !document.hidden;
     if (isPageVisible) {
@@ -145,26 +119,26 @@ function initBackgroundCanvas() {
 }
 
 /* --------------------------------------------------------------------------
-   02. Project Category Filtering Engine
+   02. Case Study Category Filtering
    -------------------------------------------------------------------------- */
-function initProjectFiltering() {
-  const filterButtons = document.querySelectorAll('.filter-btn');
-  const projectCards = document.querySelectorAll('.project-card');
+function initCaseStudyFiltering() {
+  const filterTabs = document.querySelectorAll('.filter-tab');
+  const caseCards = document.querySelectorAll('.case-study-card');
 
-  if (!filterButtons.length || !projectCards.length) return;
+  if (!filterTabs.length || !caseCards.length) return;
 
-  filterButtons.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const filterValue = btn.getAttribute('data-filter');
+  filterTabs.forEach((tab) => {
+    tab.addEventListener('click', () => {
+      const filterValue = tab.getAttribute('data-filter');
 
-      // Update active state on buttons
-      filterButtons.forEach((b) => b.classList.remove('active'));
-      btn.classList.add('active');
+      // Update active state
+      filterTabs.forEach((t) => t.classList.remove('active'));
+      tab.classList.add('active');
 
       // Filter cards
-      projectCards.forEach((card) => {
+      caseCards.forEach((card) => {
         const categories = (card.getAttribute('data-category') || '').split(' ');
-        
+
         if (filterValue === 'all' || categories.includes(filterValue)) {
           card.style.display = 'block';
           requestAnimationFrame(() => {
@@ -173,9 +147,9 @@ function initProjectFiltering() {
           });
         } else {
           card.style.opacity = '0';
-          card.style.transform = 'translateY(8px)';
+          card.style.transform = 'translateY(10px)';
           setTimeout(() => {
-            if (!categories.includes(btn.getAttribute('data-filter')) && btn.getAttribute('data-filter') !== 'all') {
+            if (!categories.includes(tab.getAttribute('data-filter')) && tab.getAttribute('data-filter') !== 'all') {
               card.style.display = 'none';
             }
           }, 200);
@@ -186,15 +160,14 @@ function initProjectFiltering() {
 }
 
 /* --------------------------------------------------------------------------
-   03. Mobile Navigation & Sticky Header Behavior
+   03. Sticky Header & Mobile Navigation
    -------------------------------------------------------------------------- */
 function initNavigation() {
   const header = document.getElementById('site-header');
-  const mobileToggle = document.getElementById('mobile-menu-toggle');
-  const mobileNav = document.getElementById('mobile-nav');
-  const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+  const toggleBtn = document.getElementById('mobile-toggle');
+  const drawer = document.getElementById('mobile-drawer');
+  const mobileLinks = document.querySelectorAll('.mobile-link');
 
-  // Sticky Header scroll styling
   window.addEventListener('scroll', () => {
     if (window.scrollY > 30) {
       header?.classList.add('scrolled');
@@ -203,33 +176,31 @@ function initNavigation() {
     }
   }, { passive: true });
 
-  // Mobile menu toggle
-  if (mobileToggle && mobileNav) {
-    mobileToggle.addEventListener('click', () => {
-      const isOpen = mobileNav.classList.toggle('open');
-      mobileToggle.classList.toggle('active', isOpen);
-      mobileToggle.setAttribute('aria-expanded', String(isOpen));
-      mobileNav.setAttribute('aria-hidden', String(!isOpen));
+  if (toggleBtn && drawer) {
+    toggleBtn.addEventListener('click', () => {
+      const isOpen = drawer.classList.toggle('open');
+      toggleBtn.classList.toggle('active', isOpen);
+      toggleBtn.setAttribute('aria-expanded', String(isOpen));
+      drawer.setAttribute('aria-hidden', String(!isOpen));
       document.body.style.overflow = isOpen ? 'hidden' : '';
     });
 
     mobileLinks.forEach((link) => {
       link.addEventListener('click', () => {
-        mobileNav.classList.remove('open');
-        mobileToggle.classList.remove('active');
-        mobileToggle.setAttribute('aria-expanded', 'false');
-        mobileNav.setAttribute('aria-hidden', 'true');
+        drawer.classList.remove('open');
+        toggleBtn.classList.remove('active');
+        toggleBtn.setAttribute('aria-expanded', 'false');
+        drawer.setAttribute('aria-hidden', 'true');
         document.body.style.overflow = '';
       });
     });
 
-    // Close on Escape key
     document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && mobileNav.classList.contains('open')) {
-        mobileNav.classList.remove('open');
-        mobileToggle.classList.remove('active');
-        mobileToggle.setAttribute('aria-expanded', 'false');
-        mobileNav.setAttribute('aria-hidden', 'true');
+      if (e.key === 'Escape' && drawer.classList.contains('open')) {
+        drawer.classList.remove('open');
+        toggleBtn.classList.remove('active');
+        toggleBtn.setAttribute('aria-expanded', 'false');
+        drawer.setAttribute('aria-hidden', 'true');
         document.body.style.overflow = '';
       }
     });
@@ -248,7 +219,7 @@ function initClipboardFeatures() {
   function showToast(message) {
     if (!toast) return;
     if (toastMsg) toastMsg.textContent = message;
-    
+
     toast.classList.add('show');
     toast.setAttribute('aria-hidden', 'false');
 
@@ -264,15 +235,14 @@ function initClipboardFeatures() {
       const email = btn.getAttribute('data-email') || 'dasunithiwanshika@gmail.com';
       try {
         await navigator.clipboard.writeText(email);
-        const originalText = btn.querySelector('.copy-text');
-        if (originalText) {
-          const prev = originalText.textContent;
-          originalText.textContent = 'Copied!';
-          setTimeout(() => { originalText.textContent = prev; }, 2000);
+        const copyTextSpan = btn.querySelector('.copy-text');
+        if (copyTextSpan) {
+          const original = copyTextSpan.textContent;
+          copyTextSpan.textContent = 'Copied!';
+          setTimeout(() => { copyTextSpan.textContent = original; }, 2000);
         }
         showToast(`Email copied: ${email}`);
       } catch (err) {
-        // Fallback for older browsers
         const textarea = document.createElement('textarea');
         textarea.value = email;
         document.body.appendChild(textarea);
@@ -290,27 +260,27 @@ function initClipboardFeatures() {
    -------------------------------------------------------------------------- */
 function initScrollSpy() {
   const sections = document.querySelectorAll('section[id]');
-  const navLinks = document.querySelectorAll('.desktop-nav .nav-link');
+  const navItems = document.querySelectorAll('.desktop-nav .nav-item');
 
-  if (!sections.length || !navLinks.length) return;
+  if (!sections.length || !navItems.length) return;
 
   function updateActiveLink() {
-    let currentSectionId = '';
-    const scrollPos = window.scrollY + 120;
+    let currentId = '';
+    const scrollPos = window.scrollY + 140;
 
-    sections.forEach((section) => {
-      const sectionTop = section.offsetTop;
-      const sectionHeight = section.offsetHeight;
-      if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
-        currentSectionId = section.getAttribute('id') || '';
+    sections.forEach((sec) => {
+      const top = sec.offsetTop;
+      const height = sec.offsetHeight;
+      if (scrollPos >= top && scrollPos < top + height) {
+        currentId = sec.getAttribute('id') || '';
       }
     });
 
-    navLinks.forEach((link) => {
-      link.classList.remove('active');
-      const href = link.getAttribute('href');
-      if (href === `#${currentSectionId}`) {
-        link.classList.add('active');
+    navItems.forEach((item) => {
+      item.classList.remove('active');
+      const href = item.getAttribute('href');
+      if (href === `#${currentId}`) {
+        item.classList.add('active');
       }
     });
   }
