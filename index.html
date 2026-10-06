@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dasuni Thiwanshika | AI & Machine Learning Engineer Portfolio</title>
+  
+  <!-- SEO & Open Graph Metadata -->
+  <meta name="description" content="Portfolio of Dasuni Thiwanshika — AI & Machine Learning Undergraduate specializing in practical ML systems, AI applications, data automation pipelines, and software engineering." />
+  <meta name="keywords" content="Dasuni Thiwanshika, AI Engineer, Machine Learning Engineer, Data Science, Python, NLP, Data Automation, SLIIT, Portfolio" />
+  <meta name="author" content="Dasuni Thiwanshika" />
+  
+  <meta property="og:title" content="Dasuni Thiwanshika | AI & Machine Learning Engineer" />
+  <meta property="og:description" content="Building intelligent solutions for real-world problems. Explore AI/ML pipelines, real-world data automation, and software applications." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://dasunithiwanshika-ship-it.github.io/portfolio/" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-primary text-slate-100 antialiased selection:bg-cyan-500/20 selection:text-cyan-300">
+
+  <!-- Subtle Ambient Canvas Background -->
+  <canvas id="hero-matrix-canvas" aria-hidden="true"></canvas>
+
+  <!-- Top Navigation Bar -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner container-custom">
+      <a href="#hero" class="brand-logo" aria-label="Dasuni Thiwanshika Home">
+        <span class="logo-symbol">&lt;/&gt;</span>
+        <span class="logo-text">DASUNI<span class="logo-dot">.</span>THIWANSHIKA</span>
+        <span class="logo-badge">AI / ML</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="#projects" class="nav-link"><span class="nav-num">01.</span>Projects</a></li>
+          <li><a href="#real-world" class="nav-link"><span class="nav-num">02.</span>Real-World</a></li>
+          <li><a href="#skills" class="nav-link"><span class="nav-num">03.</span>Capabilities</a></li>
+          <li><a href="#about" class="nav-link"><span class="nav-num">04.</span>About & Education</a></li>
+          <li><a href="#contact" class="nav-link"><span class="nav-num">05.</span>Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <a href="assets/CV/DASUNI-THIWANSHIKA-CV.pdf" download="DASUNI-THIWANSHIKA-CV.pdf" class="btn btn-sm btn-outline cv-btn" target="_blank" rel="noopener noreferrer">
+          <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          <span>Download CV</span>
+        </a>
+        <button id="mobile-menu-toggle" class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-nav-overlay" id="mobile-nav" aria-hidden="true">
+      <nav class="mobile-nav-content" aria-label="Mobile Navigation">
+        <ul class="mobile-nav-list">
+          <li><a href="#projects" class="mobile-nav-link"><span>01.</span> Featured Projects</a></li>
+          <li><a href="#real-world" class="mobile-nav-link"><span>02.</span> Real-World Problem Solving</a></li>
+          <li><a href="#skills" class="mobile-nav-link"><span>03.</span> Technical Capabilities</a></li>
+          <li><a href="#about" class="mobile-nav-link"><span>04.</span> About & Education</a></li>
+          <li><a href="#contact" class="mobile-nav-link"><span>05.</span> Contact</a></li>
+        </ul>
+        <div class="mobile-drawer-footer">
+          <a href="assets/CV/DASUNI-THIWANSHIKA-CV.pdf" download="DASUNI-THIWANSHIKA-CV.pdf" class="btn btn-primary btn-full cv-btn" target="_blank" rel="noopener noreferrer">
+            <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            Download CV (PDF)
+          </a>
+          <div class="mobile-socials">
+            <a href="https://github.com/dasunithiwanshika-ship-it" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">GitHub</a>
+            <span class="dot-divider">•</span>
+            <a href="https://linkedin.com/in/dasuni-thiwanshika-2233a2220" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">LinkedIn</a>
+            <span class="dot-divider">•</span>
+            <a href="mailto:dasunithiwanshika@gmail.com" aria-label="Email Address">Email</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="container-custom">
+        <div class="hero-grid">
+          
+          <div class="hero-content">
+            <!-- Status Pill -->
+            <div class="status-indicator-badge">
+              <span class="status-dot-pulse"></span>
+              <span class="status-badge-text">Available for AI/ML Internships &amp; Engineering Roles</span>
+            </div>
+
+            <div class="hero-identity">
+              <span class="hero-eyebrow">DASUNI THIWANSHIKA</span>
+              <p class="hero-subtitle">AI &amp; Machine Learning Undergraduate <span class="text-muted">|</span> Python &amp; Data Analytics</p>
+            </div>
+
+            <h1 class="hero-headline">
+              BUILDING <span class="text-gradient">INTELLIGENT SOLUTIONS</span> FOR REAL-WORLD PROBLEMS.
+            </h1>
+
+            <p class="hero-description">
+              AI/ML undergraduate building practical machine-learning systems, AI applications, data automation workflows, and software solutions. Grounded in rigorous data processing, clean architecture, and real business problem solving.
+            </p>
+
+            <!-- Action CTAs -->
+            <div class="hero-cta-group">
+              <a href="#projects" class="btn btn-primary" id="hero-explore-btn">
+                <span>Explore Projects</span>
+                <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+              </a>
+
+              <a href="assets/CV/DASUNI-THIWANSHIKA-CV.pdf" download="DASUNI-THIWANSHIKA-CV.pdf" class="btn btn-outline cv-btn" target="_blank" rel="noopener noreferrer" id="hero-cv-btn">
+                <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                <span>Download CV</span>
+              </a>
+            </div>
+
+            <!-- Social Links & Quick Verified Channels -->
+            <div class="hero-social-strip">
+              <span class="strip-label">DIRECT CHANNELS:</span>
+              <div class="strip-links">
+                <a href="https://github.com/dasunithiwanshika-ship-it" target="_blank" rel="noopener noreferrer" class="social-chip" aria-label="GitHub Profile">
+                  <svg class="icon-xs" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>GitHub</span>
+                </a>
+
+                <a href="https://linkedin.com/in/dasuni-thiwanshika-2233a2220" target="_blank" rel="noopener noreferrer" class="social-chip" aria-label="LinkedIn Profile">
+                  <svg class="icon-xs" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                  <span>LinkedIn</span>
+                </a>
+
+                <a href="mailto:dasunithiwanshika@gmail.com" class="social-chip" aria-label="Email Dasuni">
+                  <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  <span>dasunithiwanshika@gmail.com</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Technical Snapshot Card -->
+          <div class="hero-tech-card" aria-label="Technical overview profile">
+            <div class="tech-card-header">
+              <div class="window-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <span class="card-terminal-title">engineer_profile.json</span>
+              <span class="card-status-tag">ACTIVE</span>
+            </div>
+            
+            <div class="tech-card-body font-mono">
+              <div class="code-line"><span class="code-keyword">const</span> <span class="code-var">engineer</span> = {</div>
+              <div class="code-line indent-1"><span class="code-key">name</span>: <span class="code-str">"Dasuni Thiwanshika"</span>,</div>
+              <div class="code-line indent-1"><span class="code-key">education</span>: <span class="code-str">"BSc (Hons) IT - AI &amp; ML @ SLIIT"</span>,</div>
+              <div class="code-line indent-1"><span class="code-key">coreFocus</span>: [</div>
+              <div class="code-line indent-2"><span class="code-str">"AI Engineering &amp; ML Pipelines"</span>,</div>
+              <div class="code-line indent-2"><span class="code-str">"Data Science &amp; Enterprise Automation"</span>,</div>
+              <div class="code-line indent-2"><span class="code-str">"Intelligent Application Development"</span></div>
+              <div class="code-line indent-1">],</div>
+              <div class="code-line indent-1"><span class="code-key">strengths</span>: [</div>
+              <div class="code-line indent-2"><span class="code-str">"Problem-to-Pipeline Formulation"</span>,</div>
+              <div class="code-line indent-2"><span class="code-str">"Data Wrangling &amp; Normalization"</span>,</div>
+              <div class="code-line indent-2"><span class="code-str">"End-to-End System Execution"</span></div>
+              <div class="code-line indent-1">],</div>
+              <div class="code-line indent-1"><span class="code-key">status</span>: <span class="code-highlight">"Building real-world solutions"</span></div>
+              <div class="code-line">};</div>
+            </div>
+
+            <div class="tech-card-footer">
+              <div class="footer-metric">
+                <span class="metric-label">SPECIALIZATION</span>
+                <span class="metric-val">AI &amp; Machine Learning</span>
+              </div>
+              <div class="footer-divider"></div>
+              <div class="footer-metric">
+                <span class="metric-label">METHODOLOGY</span>
+                <span class="metric-val">Evidence &amp; Code Driven</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Target Disciplines Bar -->
+    <section class="disciplines-bar" aria-label="Target Disciplines">
+      <div class="container-custom">
+        <div class="disciplines-inner">
+          <span class="disciplines-heading">PRIMARY DOMAINS:</span>
+          <div class="disciplines-chips">
+            <span class="disc-chip">AI Engineering</span>
+            <span class="disc-chip">Machine Learning</span>
+            <span class="disc-chip">AI Applications</span>
+            <span class="disc-chip">Data Science</span>
+            <span class="disc-chip">Data Analytics</span>
+            <span class="disc-chip">AI Automation</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section (Heart of the website) -->
+    <section id="projects" class="section projects-section">
+      <div class="container-custom">
+        
+        <!-- Section Header -->
+        <div class="section-head">
+          <div class="section-kicker"><span class="kicker-num">01 /</span> PORTFOLIO CORE</div>
+          <h2 class="section-title">FEATURED PROJECTS</h2>
+          <p class="section-subtitle">
+            Every project represents a structured engineering story: identifying the underlying problem, developing a principled algorithmic approach, and delivering working code with transparent evidence.
+          </p>
+        </div>
+
+        <!-- Filter Navigation -->
+        <div class="project-filter-wrap" role="toolbar" aria-label="Project Category Filter">
+          <button class="filter-btn active" data-filter="all">
+            <span>All Projects</span>
+            <span class="filter-count">6</span>
+          </button>
+          <button class="filter-btn" data-filter="aiml">
+            <span>AI &amp; ML</span>
+            <span class="filter-count">3</span>
+          </button>
+          <button class="filter-btn" data-filter="realworld">
+            <span>Real-World</span>
+            <span class="filter-count">2</span>
+          </button>
+          <button class="filter-btn" data-filter="apps">
+            <span>Applications</span>
+            <span class="filter-count">2</span>
+          </button>
+          <button class="filter-btn" data-filter="hardware">
+            <span>Hardware</span>
+            <span class="filter-count">1</span>
+          </button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-container">
+
+          <!-- PROJECT 01 (Major AI Application): Smart Kitchen Inventory & Recipe Assistant -->
+          <article class="project-card featured-highlight" data-category="aiml apps" id="project-smart-kitchen">
+            <div class="project-card-inner">
+              
+              <div class="project-visual">
+                <img src="assets/projects/smart-kitchen.svg" alt="Architecture flow for Smart Kitchen Inventory and Recipe Assistant" class="project-diagram-img" loading="lazy" />
+                <div class="visual-badge-overlay">
+                  <span class="live-pill"><span class="status-dot-pulse"></span> CURRENT MAJOR AI APP</span>
+                </div>
+              </div>
+
+              <div class="project-body">
+                <div class="project-meta-top">
+                  <span class="project-number font-mono">01 — AI APPLICATION</span>
+                  <span class="project-status-tag status-building">Currently Building</span>
+                </div>
+
+                <h3 class="project-title">Smart Kitchen Inventory &amp; Recipe Assistant</h3>
+                <p class="project-one-liner">Intelligent pantry tracking, shelf-life monitoring, and dynamic recipe matching to eliminate grocery waste.</p>
+
+                <!-- Storytelling breakdown -->
+                <div class="project-story-flow">
+                  <div class="story-step">
+                    <div class="story-label font-mono"><span class="step-num">A.</span> PROBLEM</div>
+                    <p class="story-text">Households waste consumable groceries due to poor shelf-life visibility and struggle to prepare cohesive meals strictly from available leftover pantry items.</p>
+                  </div>
+
+                  <div class="story-step">
+                    <div class="story-label font-mono"><span class="step-num">B.</span> APPROACH &amp; SOLUTION</div>
+                    <p class="story-text">Building an intelligent inventory indexing system coupled with dynamic recipe recommendation logic that evaluates item shelf-lives and ranks feasible zero-waste recipes.</p>
+                  </div>
+
+                  <div class="story-step">
+                    <div class="story-label font-mono"><span class="step-num">C.</span> KEY CAPABILITIES IMPLEMENTED</div>
+                    <ul class="story-bullet-list">
+                      <li>Pantry item tracking with automated expiry calculations</li>
+                      <li>Ingredient availability matching algorithms</li>
+                      <li>Dynamic recipe ranking based on existing ingredient ratios</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Tech Stack Pills -->
+                <div class="project-tech-stack" aria-label="Technologies used">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">AI / NLP Logic</span>
+                  <span class="tech-tag">Algorithm Design</span>
+                  <span class="tech-tag">Data Modeling</span>
+                  <span class="tech-tag">Application Architecture</span>
+                </div>
+
+                <!-- Project Actions -->
+                <div class="project-card-actions">
+                  <a href="https://github.com/dasunithiwanshika-ship-it/Smart-Kitchen-Inventory-Recipe-Assistant" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                    <svg class="icon-xs" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    <span>View Repository on GitHub</span>
+                  </a>
+                  <span class="evidence-badge font-mono">Source of Truth: Active GitHub Codebase</span>
+                </div>
+
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 02: Telecom Network Anomaly & Fault-Risk Detection -->
+          <article class="project-card" data-category="aiml realworld" id="project-telecom-anomaly">
+            <div class="project-card-inner">
+              
+              <div class="project-visual">
+                <img src="assets/projects/telecom-anomaly.svg" alt="Architecture flow for Telecom Network Anomaly & Fault-Risk Detection" class="project-diagram-img" loading="lazy" />
+                <div class="visual-badge-overlay">
+                  <span class="live-pill amber-pill">PUBLIC TELECOM KPI DATA</span>
+                </div>
+              </div>
+
+              <div class="project-body">
+                <div class="project-meta-top">
+                  <span class="project-number font-mono">02 — MACHINE LEARNING</span>
+                  <span class="project-status-tag status-progress">In Progress</span>
+                </div>
+
+                <h3 class="project-title">Telecom Network Anomaly &amp; Fault-Risk Detection</h3>
+                <p class="project-one-liner">Machine-learning pipeline analyzing public telecom telemetry KPIs to detect abnormal behavior and evaluate fault risk indicators.</p>
+
+                <!-- Storytelling breakdown -->
+                <div class="project-story-flow">
+                  <div class="story-step">
+                    <div class="story-label font-mono"><span class="step-num">A.</span> PROBLEM</div>
+                    <p class="story-text">Modern telecommunication networks generate massive continuous KPI streams where subtle precursor degradation patterns precede severe infrastructure outages.</p>
+                  </div>
+
+                  <div class="story-step">
+                    <div class="story-label font-mono"><span class="step-num">B.</span> APPROACH &amp; SOLUTION</div>
+                    <p class="story-text">Developing an end-to-end ML workflow on public telecom KPI benchmarks. Investigating both unsupervised anomaly detection (e.g. Isolation Forest, rolling z-scores) and supervised classification to isolate high-risk operational windows.</p>
+                  </div>
+
+                  <div class="story-step">
+                    <div class="story-label font-mono"><span class="step-num">C.</span> WORK &amp; PIPELINE STAGES</div>
+                    <ul class="story-bullet-list">
+                      <li>KPI data cleaning, missing-value imputation &amp; normalization</li>
+                      <li>Exploratory data analysis across traffic volume and dropped call rates</li>
+                      <li>Temporal feature engineering &amp; congestion window modeling</li>
+                      <li>Evaluation of supervised and unsupervised anomaly detection baselines</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Tech Stack Pills -->
+                <div class="project-tech-stack" aria-label="Technologies used">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Pandas</span>
+                  <span class="tech-tag">NumPy</span>
+                  <span class="tech-tag">Scikit-learn</span>
+                  <span class="tech-tag">Google Colab</span>
+                  <span class="tech-tag">Time-Series Analytics</span>
+                </div>
+
+                <!-- Project Actions -->
+                <div class="project-card-actions">
+                  <div class="authenticity-notice font-mono">
+                    <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                    <span>Built strictly with public benchmark KPI data</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 03: Fake News Detector -->
+          <article class="project-card" data-category="aiml" id="project-fake-news">
+            <div class="project-card-inner">
+              
+              <div class="project-visual">
+                <img src="assets/projects/fake-news.svg" alt="NLP pipeline for Fake News Detector" class="project-diagram-img" loading="lazy" />
+                <div class="visual-badge-overlay">
+                  <span class="live-pill purple-pill">72K+ WELFAKE BENCHMARK</span>
+                </div>
+              </div>
+
+              <div class="project-body">
+                <div class="project-meta-top">
+                  <span class="project-number font-mono">03 — NLP &amp; DEEP LEARNING</span>
+                  <span class="project-status-tag status-completed">Completed</span>
+                </div>
+
+                <h3 class="project-title">Fake News Detector (WELFake Dataset)</h3>
+                <p class="project-one-liner">NLP classification pipeline processing 72,000+ benchmark news articles to identify misinformation patterns.</p>
+
+                <!-- Storytelling breakdown -->
+                <div class="project-story-flow">
+                  <div class="story-step">
+                    <div class="story-label font-mono"><span class="step-num">A.</span> PROBLEM</div>
+                    <p class="story-text">High-volume misinformation spreads faster than manual fact-checking can respond, demanding scalable text vectorization and robust classification models.</p>
+                  </div>
+
+                  <div class="story-step">
+                    <div class="story-label font-mono"><span class="step-num">B.</span> APPROACH &amp; SOLUTION</div>
+                    <p class="story-text">Built an end-to-end NLP pipeline on the benchmark 72K+ WELFake dataset, comparing TF-IDF n-gram vectorization and dense Word2Vec semantic embeddings across classical and deep learning classifiers.</p>
+                  </div>
+
+                  <div class="story-step">
+                    <div class="story-label font-mono"><span class="step-num">C.</span> WORK &amp; PIPELINE STAGES</div>
+                    <ul class="story-bullet-list">
+                      <li>Regex-based text cleansing, stopword removal, and lemmatization</li>
+                      <li>TF-IDF N-gram feature matrices and Word2Vec word embeddings</li>
+                      <li>Model training and validation using PyTorch / TensorFlow / Scikit-learn</li>
+                      <li>Rigorous precision, recall, and confusion matrix evaluation on test splits</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Tech Stack Pills -->
+                <div class="project-tech-stack" aria-label="Technologies used">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">TensorFlow</span>
+                  <span class="tech-tag">PyTorch</span>
+                  <span class="tech-tag">TF-IDF</span>
+                  <span class="tech-tag">Word2Vec</span>
+                  <span class="tech-tag">Scikit-learn</span>
+                  <span class="tech-tag">NLP</span>
+                </div>
+
+                <!-- Project Actions -->
+                <div class="project-card-actions">
+                  <a href="https://github.com/dasunithiwanshika-ship-it/fake-news-detector" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                    <svg class="icon-xs" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    <span>View Repository on GitHub</span>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 04: Sharentals — Business Data Automation & Analytics -->
+          <article class="project-card" data-category="realworld" id="project-sharentals">
+            <div class="project-card-inner">
+              
+              <div class="project-visual">
+                <img src="assets/projects/sharentals-pipeline.svg" alt="ETL Data pipeline for Sharentals" class="project-diagram-img" loading="lazy" />
+                <div class="visual-badge-overlay">
+                  <span class="live-pill amber-pill">OPERATIONAL DATA AUTOMATION</span>
+                </div>
+              </div>
+
+              <div class="project-body">
+                <div class="project-meta-top">
+                  <span class="project-number font-mono">04 — DATA AUTOMATION</span>
+                  <span class="project-status-tag status-applied">Applied Industry Solution</span>
+                </div>
+
+                <h3 class="project-title">Sharentals — Business Data Automation &amp; Analytics</h3>
+                <p class="project-one-liner">Automated reconciliation pipeline uniting Linkt toll transactions with 365/iStarr booking feeds to eliminate manual accounting overhead.</p>
+
+                <!-- Storytelling breakdown -->
+                <div class="project-story-flow">
+                  <div class="story-step">
+                    <div class="story-label font-mono"><span class="step-num">A.</span> BUSINESS PROBLEM</div>
+                    <p class="story-text">High-volume operational Linkt toll charges and vehicle booking feeds from 365/iStarr had inconsistent registration formatting and duplicate timestamps, making manual toll attribution error-prone.</p>
+                  </div>
+
+                  <div class="story-step">
+                    <div class="story-label font-mono"><span class="step-num">B.</span> AUTOMATION SOLUTION</div>
+                    <p class="story-text">Engineered a Python/Pandas data automation pipeline that performs regex-based registration normalization, automated trip matching, duplicate detection, and structured master-data generation.</p>
+                  </div>
+
+                  <div class="story-step">
+                    <div class="story-label font-mono"><span class="step-num">C.</span> DELIVERABLES &amp; IMPACT</div>
+                    <ul class="story-bullet-list">
+                      <li>Automated transaction matching between toll feeds and active trip intervals</li>
+                      <li>Elimination of manual record deduplication</li>
+                      <li>Fleet availability analysis and automated idle-vehicle reporting</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Tech Stack Pills -->
+                <div class="project-tech-stack" aria-label="Technologies used">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Pandas</span>
+                  <span class="tech-tag">Data Cleaning</span>
+                  <span class="tech-tag">ETL Automation</span>
+                  <span class="tech-tag">Data Wrangling</span>
+                  <span class="tech-tag">Business Analytics</span>
+                </div>
+
+                <!-- Project Actions -->
+                <div class="project-card-actions">
+                  <span class="evidence-badge font-mono">Practical Enterprise Data Processing</span>
+                </div>
+
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 05: FixNow -->
+          <article class="project-card" data-category="apps" id="project-fixnow">
+            <div class="project-card-inner">
+              
+              <div class="project-visual">
+                <img src="assets/projects/fixnow-app.svg" alt="Architecture flow for FixNow Mobile Platform" class="project-diagram-img" loading="lazy" />
+                <div class="visual-badge-overlay">
+                  <span class="live-pill">MOBILE &amp; REST BACKEND</span>
+                </div>
+              </div>
+
+              <div class="project-body">
+                <div class="project-meta-top">
+                  <span class="project-number font-mono">05 — APPLICATION DEV</span>
+                  <span class="project-status-tag status-completed">Full-Stack Application</span>
+                </div>
+
+                <h3 class="project-title">FixNow — Mobile Maintenance &amp; Issue Tracking</h3>
+                <p class="project-one-liner">Cross-platform mobile application enabling real-time maintenance reporting, issue dispatch, and lifecycle tracking.</p>
+
+                <!-- Storytelling breakdown -->
+                <div class="project-story-flow">
+                  <div class="story-step">
+                    <div class="story-label font-mono"><span class="step-num">A.</span> PROBLEM</div>
+                    <p class="story-text">Unorganized maintenance ticket submissions create communication lag between facility occupants and technical service teams.</p>
+                  </div>
+
+                  <div class="story-step">
+                    <div class="story-label font-mono"><span class="step-num">B.</span> SOLUTION &amp; ARCHITECTURE</div>
+                    <p class="story-text">Built a responsive cross-platform mobile application utilizing React Native &amp; Expo connected to an Express/Node.js REST API with cloud MongoDB Atlas database clustering.</p>
+                  </div>
+
+                  <div class="story-step">
+                    <div class="story-label font-mono"><span class="step-num">C.</span> KEY FEATURES</div>
+                    <ul class="story-bullet-list">
+                      <li>Role-based authentication (Reporter, Technician, Administrator)</li>
+                      <li>REST API design with structured JSON payload contracts</li>
+                      <li>Real-time maintenance ticket status progression and audit records</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Tech Stack Pills -->
+                <div class="project-tech-stack" aria-label="Technologies used">
+                  <span class="tech-tag">React Native</span>
+                  <span class="tech-tag">Expo</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">Express.js</span>
+                  <span class="tech-tag">MongoDB Atlas</span>
+                  <span class="tech-tag">RESTful APIs</span>
+                </div>
+
+                <!-- Project Actions -->
+                <div class="project-card-actions">
+                  <span class="evidence-badge font-mono">End-to-End Full-Stack Architecture</span>
+                </div>
+
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 06: Smart Medication Reminder -->
+          <article class="project-card" data-category="hardware" id="project-smart-med">
+            <div class="project-card-inner">
+              
+              <div class="project-visual">
+                <img src="assets/projects/smart-medication.svg" alt="Hardware schematics for Smart Medication Reminder" class="project-diagram-img" loading="lazy" />
+                <div class="visual-badge-overlay">
+                  <span class="live-pill emerald-pill">EMBEDDED HARDWARE</span>
+                </div>
+              </div>
+
+              <div class="project-body">
+                <div class="project-meta-top">
+                  <span class="project-number font-mono">06 — HARDWARE &amp; AUTOMATION</span>
+                  <span class="project-status-tag status-applied">Hardware Prototype</span>
+                </div>
+
+                <h3 class="project-title">Smart Medication Reminder</h3>
+                <p class="project-one-liner">Microcontroller-driven medication management device with automated scheduling alarms and GSM cellular caregiver notifications.</p>
+
+                <!-- Storytelling breakdown -->
+                <div class="project-story-flow">
+                  <div class="story-step">
+                    <div class="story-label font-mono"><span class="step-num">A.</span> PROBLEM</div>
+                    <p class="story-text">Strict medication schedules are easily missed by elderly or busy patients, requiring automated physical reminders and fail-safe caregiver alert dispatch.</p>
+                  </div>
+
+                  <div class="story-step">
+                    <div class="story-label font-mono"><span class="step-num">B.</span> SOLUTION</div>
+                    <p class="story-text">Engineered a standalone embedded system utilizing an Arduino microcontroller running C/C++ control logic, interfaced with an I2C LCD screen, audio buzzer, and a GSM cellular module.</p>
+                  </div>
+
+                  <div class="story-step">
+                    <div class="story-label font-mono"><span class="step-num">C.</span> WORK &amp; IMPLEMENTATION</div>
+                    <ul class="story-bullet-list">
+                      <li>Real-time dosage schedule timing and compartment alerts</li>
+                      <li>LCD visual schedule feedback and audible reminder buzzer</li>
+                      <li>Automated GSM AT-command SMS dispatch if a dosage is unacknowledged</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Tech Stack Pills -->
+                <div class="project-tech-stack" aria-label="Technologies used">
+                  <span class="tech-tag">Arduino</span>
+                  <span class="tech-tag">C/C++</span>
+                  <span class="tech-tag">GSM Module</span>
+                  <span class="tech-tag">I2C LCD</span>
+                  <span class="tech-tag">Embedded Automation</span>
+                </div>
+
+                <!-- Project Actions -->
+                <div class="project-card-actions">
+                  <a href="https://linkedin.com/in/dasuni-thiwanshika-2233a2220" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                    <svg class="icon-xs" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    <span>Watch LinkedIn Demo &rarr;</span>
+                  </a>
+                  <span class="evidence-badge font-mono">Hardware &amp; Firmware Prototype</span>
+                </div>
+
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Real-World Problem Solving Feature Section -->
+    <section id="real-world" class="section realworld-section">
+      <div class="container-custom">
+        
+        <div class="section-head">
+          <div class="section-kicker"><span class="kicker-num">02 /</span> APPLIED EXPERIENCE</div>
+          <h2 class="section-title">REAL-WORLD PROBLEM SOLVING</h2>
+          <p class="section-subtitle">
+            Beyond academic exercises, I focus on solving operational data challenges and delivering value under real business requirements.
+          </p>
+        </div>
+
+        <div class="realworld-grid">
+          
+          <!-- Case 1: Sharentals -->
+          <div class="realworld-card">
+            <div class="rw-card-header">
+              <span class="rw-tag font-mono">BUSINESS DATA AUTOMATION</span>
+              <span class="rw-year font-mono">Applied Project</span>
+            </div>
+            <h3 class="rw-title">Sharentals — Fleet Data Automation &amp; Reconciliation</h3>
+            <p class="rw-desc">
+              Solved an operational data bottleneck by building an automated Python pipeline to reconcile high-frequency Linkt toll charges with 365/iStarr vehicle reservations.
+            </p>
+            <div class="rw-aspects">
+              <div class="aspect-item">
+                <span class="aspect-label font-mono">DATA CHALLENGE</span>
+                <p>Non-standardized vehicle plate strings, overlapping timestamps, and unallocated trip toll penalties across fleet logs.</p>
+              </div>
+              <div class="aspect-item">
+                <span class="aspect-label font-mono">ENGINEERING SOLUTION</span>
+                <p>Built Python/Pandas transformation workflows with RegEx normalization, deduplication logic, master dataset indexing, and automated idle-vehicle reporting.</p>
+              </div>
+            </div>
+            <div class="rw-footer">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Pandas</span>
+              <span class="tech-tag">Data Cleaning</span>
+              <span class="tech-tag">ETL Automation</span>
+            </div>
+          </div>
+
+          <!-- Case 2: Apple Tree Tots -->
+          <div class="realworld-card">
+            <div class="rw-card-header">
+              <span class="rw-tag font-mono">COMMERCIAL EXPERIENCE</span>
+              <span class="rw-year font-mono">2025 &ndash; 2026</span>
+            </div>
+            <h3 class="rw-title">Apple Tree Tots — Marketing Management &amp; Analytics</h3>
+            <p class="rw-desc">
+              Direct commercial experience managing digital campaigns, analyzing customer engagement metrics, and coordinating business growth strategies under real operational objectives.
+            </p>
+            <div class="rw-aspects">
+              <div class="aspect-item">
+                <span class="aspect-label font-mono">BUSINESS RESPONSIBILITY</span>
+                <p>Overseeing end-to-end digital marketing execution, campaign delivery schedules, and audience acquisition funnels.</p>
+              </div>
+              <div class="aspect-item">
+                <span class="aspect-label font-mono">ANALYTICAL RIGOR</span>
+                <p>Tracking performance metrics, evaluating channel conversion rates, and optimizing communication strategies based on real customer feedback.</p>
+              </div>
+            </div>
+            <div class="rw-footer">
+              <span class="tech-tag">Campaign Analytics</span>
+              <span class="tech-tag">Digital Strategy</span>
+              <span class="tech-tag">Audience Engagement</span>
+              <span class="tech-tag">Business Execution</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Capabilities / Skills Matrix -->
+    <section id="skills" class="section skills-section">
+      <div class="container-custom">
+        
+        <div class="section-head">
+          <div class="section-kicker"><span class="kicker-num">03 /</span> TECHNICAL CAPABILITIES</div>
+          <h2 class="section-title">TECHNICAL SKILLS &amp; TOOLKIT</h2>
+          <p class="section-subtitle">
+            Core toolchain and engineering competencies developed across machine learning research, data processing pipelines, and full-stack software development.
+          </p>
+        </div>
+
+        <div class="skills-matrix-grid">
+          
+          <!-- Category 1: AI & ML -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon-box">
+                <svg class="icon-md text-cyan" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4c0 .7-.2 1.4-.5 2l2.5 2.5a2 2 0 0 1 .5 1.5v4a2 2 0 0 1-2 2h-1v2a2 2 0 0 1-2 2h-3a2 2 0 0 1-2-2v-2H8a2 2 0 0 1-2-2v-4a2 2 0 0 1 .5-1.5L9 8.5C8.7 7.9 8.5 7.2 8.5 6.5A4 4 0 0 1 12 2z"></path></svg>
+              </div>
+              <div>
+                <span class="category-number font-mono">01. DOMAIN</span>
+                <h3 class="category-name">AI &amp; Machine Learning</h3>
+              </div>
+            </div>
+            <div class="skill-tags-cloud">
+              <span class="skill-pill">Python</span>
+              <span class="skill-pill">Scikit-learn</span>
+              <span class="skill-pill">TensorFlow</span>
+              <span class="skill-pill">PyTorch</span>
+              <span class="skill-pill">Natural Language Processing (NLP)</span>
+              <span class="skill-pill">TF-IDF Vectorization</span>
+              <span class="skill-pill">Word2Vec</span>
+              <span class="skill-pill">Classification Algorithms</span>
+              <span class="skill-pill">Feature Engineering</span>
+              <span class="skill-pill">Anomaly Detection</span>
+              <span class="skill-pill">Model Evaluation &amp; Metrics</span>
+            </div>
+          </div>
+
+          <!-- Category 2: Data -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon-box">
+                <svg class="icon-md text-amber" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+              </div>
+              <div>
+                <span class="category-number font-mono">02. DOMAIN</span>
+                <h3 class="category-name">Data Engineering &amp; Analytics</h3>
+              </div>
+            </div>
+            <div class="skill-tags-cloud">
+              <span class="skill-pill">Pandas</span>
+              <span class="skill-pill">NumPy</span>
+              <span class="skill-pill">Data Cleaning &amp; Wrangling</span>
+              <span class="skill-pill">Exploratory Data Analysis (EDA)</span>
+              <span class="skill-pill">Data Visualization</span>
+              <span class="skill-pill">Automated ETL Pipelines</span>
+              <span class="skill-pill">Time-Series Analysis</span>
+              <span class="skill-pill">Master Data Reconciliation</span>
+            </div>
+          </div>
+
+          <!-- Category 3: Development -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon-box">
+                <svg class="icon-md text-emerald" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <div>
+                <span class="category-number font-mono">03. DOMAIN</span>
+                <h3 class="category-name">Software &amp; Mobile Development</h3>
+              </div>
+            </div>
+            <div class="skill-tags-cloud">
+              <span class="skill-pill">React</span>
+              <span class="skill-pill">React Native</span>
+              <span class="skill-pill">Expo</span>
+              <span class="skill-pill">Node.js</span>
+              <span class="skill-pill">Express.js</span>
+              <span class="skill-pill">RESTful API Design</span>
+              <span class="skill-pill">JavaScript (ES6+)</span>
+              <span class="skill-pill">HTML5 &amp; CSS3</span>
+              <span class="skill-pill">Agile Workflows</span>
+            </div>
+          </div>
+
+          <!-- Category 4: Tools & DB -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon-box">
+                <svg class="icon-md text-purple" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+              </div>
+              <div>
+                <span class="category-number font-mono">04. DOMAIN</span>
+                <h3 class="category-name">Databases, Hardware &amp; Tools</h3>
+              </div>
+            </div>
+            <div class="skill-tags-cloud">
+              <span class="skill-pill">MongoDB Atlas</span>
+              <span class="skill-pill">PostgreSQL</span>
+              <span class="skill-pill">Supabase</span>
+              <span class="skill-pill">MySQL</span>
+              <span class="skill-pill">Git &amp; GitHub</span>
+              <span class="skill-pill">VS Code</span>
+              <span class="skill-pill">Google Colab</span>
+              <span class="skill-pill">Arduino &amp; C/C++</span>
+              <span class="skill-pill">GSM &amp; Embedded I/O</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- About & Education Section -->
+    <section id="about" class="section about-section">
+      <div class="container-custom">
+        <div class="about-grid">
+          
+          <!-- About Narrative -->
+          <div class="about-narrative">
+            <div class="section-kicker"><span class="kicker-num">04 /</span> PROFILE &amp; BACKGROUND</div>
+            <h2 class="section-title">ENGINEERING PHILOSOPHY</h2>
+            
+            <div class="editorial-body">
+              <p class="lead-text">
+                I am an AI &amp; Machine Learning undergraduate driven by a practical ethos: machine learning creates real value only when it solves a well-defined problem and integrates seamlessly into reliable systems.
+              </p>
+              <p>
+                My work spans the complete lifecycle of technical problem solving — from exploratory data analysis and feature engineering, to model training, evaluation, and deploying end-to-end full-stack applications. Whether wrangling messy enterprise datasets into automated reconciliation pipelines or engineering intelligent NLP classifiers, I value code quality, clear architecture, and demonstrable evidence over superficial complexity.
+              </p>
+              <p>
+                I am seeking opportunities where I can contribute to high-impact machine learning systems, data engineering pipelines, and intelligent software applications.
+              </p>
+            </div>
+
+            <div class="about-cta-row">
+              <a href="assets/CV/DASUNI-THIWANSHIKA-CV.pdf" download="DASUNI-THIWANSHIKA-CV.pdf" class="btn btn-outline cv-btn" target="_blank" rel="noopener noreferrer">
+                <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                <span>Download Full CV (PDF)</span>
+              </a>
+              <span class="cv-note font-mono">CV contains comprehensive academic transcripts &amp; detailed timeline</span>
+            </div>
+          </div>
+
+          <!-- Compact Education Card -->
+          <div class="about-sidebar">
+            <div class="education-compact-card">
+              <div class="edu-card-head">
+                <span class="edu-badge font-mono">ACADEMIC PROFILE</span>
+                <span class="edu-gpa font-mono">GPA: 3.58 / 4.00</span>
+              </div>
+
+              <div class="edu-degree-block">
+                <h3 class="edu-degree">BSc (Hons) in Information Technology</h3>
+                <div class="edu-specialization">Specialization: <strong class="text-cyan">AI &amp; Machine Learning</strong></div>
+                <div class="edu-institution">Sri Lanka Institute of Information Technology (SLIIT)</div>
+                <div class="edu-timeline font-mono">2024 &ndash; 2028 (Expected)</div>
+              </div>
+
+              <div class="edu-focus-areas">
+                <span class="focus-label font-mono">KEY ACADEMIC FOCUS:</span>
+                <ul class="focus-list">
+                  <li>Machine Learning Algorithms &amp; Statistical Modeling</li>
+                  <li>Data Structures &amp; Algorithmic Problem Solving</li>
+                  <li>Database Management Systems &amp; Distributed Data</li>
+                  <li>Software Engineering Principles &amp; Agile Delivery</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section / Strong Call-To-Action -->
+    <section id="contact" class="section contact-section">
+      <div class="container-custom">
+        <div class="contact-card">
+          
+          <div class="contact-header-content">
+            <div class="section-kicker text-center"><span class="kicker-num">05 /</span> INITIATE CONTACT</div>
+            <h2 class="contact-hero-title">Let's build something useful.</h2>
+            <p class="contact-hero-subtitle">
+              I am open to AI/ML engineering internships, data analytics roles, research collaborations, and technical discussions.
+            </p>
+          </div>
+
+          <!-- Contact Channels Grid -->
+          <div class="contact-channels-grid">
+            
+            <!-- Email Channel -->
+            <div class="channel-card">
+              <div class="channel-icon-wrap">
+                <svg class="icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div class="channel-info">
+                <span class="channel-label font-mono">EMAIL DIRECT</span>
+                <a href="mailto:dasunithiwanshika@gmail.com" class="channel-value">dasunithiwanshika@gmail.com</a>
+              </div>
+              <div class="channel-actions">
+                <button class="btn-copy-email btn btn-xs btn-outline" data-email="dasunithiwanshika@gmail.com" aria-label="Copy email address to clipboard">
+                  <span class="copy-text">Copy</span>
+                </button>
+                <a href="mailto:dasunithiwanshika@gmail.com" class="btn btn-xs btn-primary">Send Email</a>
+              </div>
+            </div>
+
+            <!-- LinkedIn Channel -->
+            <div class="channel-card">
+              <div class="channel-icon-wrap">
+                <svg class="icon-md" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </div>
+              <div class="channel-info">
+                <span class="channel-label font-mono">PROFESSIONAL NETWORK</span>
+                <span class="channel-value">linkedin.com/in/dasuni-thiwanshika-2233a2220</span>
+              </div>
+              <div class="channel-actions">
+                <a href="https://linkedin.com/in/dasuni-thiwanshika-2233a2220" target="_blank" rel="noopener noreferrer" class="btn btn-xs btn-outline">
+                  <span>Open Profile &rarr;</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- GitHub Channel -->
+            <div class="channel-card">
+              <div class="channel-icon-wrap">
+                <svg class="icon-md" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </div>
+              <div class="channel-info">
+                <span class="channel-label font-mono">CODE REPOSITORIES</span>
+                <span class="channel-value">github.com/dasunithiwanshika-ship-it</span>
+              </div>
+              <div class="channel-actions">
+                <a href="https://github.com/dasunithiwanshika-ship-it" target="_blank" rel="noopener noreferrer" class="btn btn-xs btn-outline">
+                  <span>Explore Repos &rarr;</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Bottom CV Banner -->
+          <div class="contact-cv-banner">
+            <div class="cv-banner-text">
+              <span class="font-mono text-cyan">LOOKING FOR THE DETAILED RESUME?</span>
+              <p>Download the complete official curriculum vitae including all coursework, project transcripts, and contact info.</p>
+            </div>
+            <a href="assets/CV/DASUNI-THIWANSHIKA-CV.pdf" download="DASUNI-THIWANSHIKA-CV.pdf" class="btn btn-primary cv-btn" target="_blank" rel="noopener noreferrer">
+              <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span>Download CV (PDF)</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container-custom">
+      <div class="footer-grid">
+        
+        <div class="footer-brand">
+          <span class="footer-logo">DASUNI THIWANSHIKA</span>
+          <p class="footer-tagline">AI &amp; Machine Learning Undergraduate | Building intelligent solutions for real-world problems.</p>
+        </div>
+
+        <div class="footer-meta font-mono">
+          <div class="footer-status-pill">
+            <span class="status-dot"></span>
+            <span>SYSTEM STATUS: OPERATIONAL</span>
+          </div>
+          <div class="footer-credits">
+            <span>Designed &amp; Engineered with Precision</span>
+            <span class="text-muted">•</span>
+            <span>Compatible with GitHub Pages</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container for Quick Interactions -->
+  <div id="toast" class="toast" role="alert" aria-live="polite" aria-hidden="true">
+    <svg class="toast-icon icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+    <span id="toast-message">Copied to clipboard</span>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

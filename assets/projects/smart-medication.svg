@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="sm-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b131f" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <pattern id="sm-grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1" />
+    </pattern>
+  </defs>
+
+  <rect width="800" height="450" rx="16" fill="url(#sm-bg)" />
+  <rect width="800" height="450" rx="16" fill="url(#sm-grid)" />
+  <rect x="0.5" y="0.5" width="799" height="449" rx="15.5" stroke="rgba(255, 255, 255, 0.08)" />
+
+  <g transform="translate(40, 36)">
+    <rect width="210" height="28" rx="14" fill="rgba(16, 185, 129, 0.12)" stroke="rgba(16, 185, 129, 0.3)" />
+    <circle cx="14" cy="14" r="4" fill="#10b981" />
+    <text x="26" y="18" fill="#34d399" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" letter-spacing="0.5">HARDWARE & EMBEDDED</text>
+  </g>
+
+  <!-- Hardware Schematics Diagram -->
+  <g transform="translate(60, 95)">
+    <!-- MCU Core -->
+    <g transform="translate(240, 0)">
+      <rect width="200" height="180" rx="10" fill="rgba(30, 41, 59, 0.95)" stroke="rgba(16, 185, 129, 0.5)" stroke-width="1.5" />
+      <text x="18" y="28" fill="#34d399" font-family="'JetBrains Mono', monospace" font-size="11">CONTROLLER CORE</text>
+      <text x="18" y="52" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="15">Arduino MCU (C/C++)</text>
+      <text x="18" y="78" fill="#cbd5e1" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">• Real-Time Clock timing</text>
+      <text x="18" y="98" fill="#cbd5e1" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">• Multi-compartment logic</text>
+      <text x="18" y="118" fill="#cbd5e1" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">• Sensor trigger debounce</text>
+      <text x="18" y="138" fill="#cbd5e1" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">• Alarm timer routine</text>
+      <text x="18" y="162" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="11">Embedded Firmware</text>
+    </g>
+
+    <!-- Peripheral: Display & Input -->
+    <g transform="translate(0, 0)">
+      <rect width="190" height="180" rx="10" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(255, 255, 255, 0.1)" />
+      <text x="16" y="28" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="11">PERIPHERALS</text>
+      <text x="16" y="52" fill="#f8fafc" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="14">I2C LCD & Buzzer</text>
+      <text x="16" y="78" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">• Visual schedule alerts</text>
+      <text x="16" y="100" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">• Audible chimes</text>
+      <text x="16" y="122" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">• Dosage instructions</text>
+      <text x="16" y="152" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="11">Local Feedback</text>
+    </g>
+
+    <!-- Peripheral: GSM Telephony Module -->
+    <g transform="translate(490, 0)">
+      <rect width="190" height="180" rx="10" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(255, 255, 255, 0.1)" />
+      <text x="16" y="28" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="11">REMOTE DISPATCH</text>
+      <text x="16" y="52" fill="#f8fafc" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="14">GSM SIM Module</text>
+      <text x="16" y="78" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">• AT command protocol</text>
+      <text x="16" y="100" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">• Caregiver SMS alerts</text>
+      <text x="16" y="122" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">• Missed dosage escalate</text>
+      <text x="16" y="152" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="11">Cellular Link</text>
+    </g>
+
+    <!-- Wire traces -->
+    <path d="M 190 90 L 240 90" stroke="#10b981" stroke-width="2" stroke-dasharray="3 3" />
+    <path d="M 440 90 L 490 90" stroke="#38bdf8" stroke-width="2" stroke-dasharray="3 3" />
+  </g>
+
+  <!-- Bottom Terminal Status Bar -->
+  <g transform="translate(60, 310)">
+    <rect width="680" height="85" rx="8" fill="rgba(2, 6, 23, 0.9)" stroke="rgba(255, 255, 255, 0.08)" />
+    <circle cx="24" cy="22" r="4" fill="#ef4444" />
+    <circle cx="38" cy="22" r="4" fill="#f59e0b" />
+    <circle cx="52" cy="22" r="4" fill="#10b981" />
+    <text x="74" y="26" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="11">med_reminder.ino</text>
+    
+    <text x="24" y="54" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="12">void checkScheduledDose() { if(missed) sendSMSAlert(caregiverNumber); }</text>
+    <text x="24" y="74" fill="#34d399" font-family="'JetBrains Mono', monospace" font-size="12">> [OK] Hardware prototype demo tested & operational</text>
+  </g>
+</svg>

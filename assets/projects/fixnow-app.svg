@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="fx-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <pattern id="fx-grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1" />
+    </pattern>
+  </defs>
+
+  <rect width="800" height="450" rx="16" fill="url(#fx-bg)" />
+  <rect width="800" height="450" rx="16" fill="url(#fx-grid)" />
+  <rect x="0.5" y="0.5" width="799" height="449" rx="15.5" stroke="rgba(255, 255, 255, 0.08)" />
+
+  <g transform="translate(40, 36)">
+    <rect width="180" height="28" rx="14" fill="rgba(56, 189, 248, 0.12)" stroke="rgba(56, 189, 248, 0.3)" />
+    <circle cx="14" cy="14" r="4" fill="#38bdf8" />
+    <text x="26" y="18" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" letter-spacing="0.5">FULL-STACK MOBILE</text>
+  </g>
+
+  <!-- Flow Diagram -->
+  <g transform="translate(60, 95)">
+    <!-- Frontend -->
+    <rect x="0" y="0" width="190" height="180" rx="10" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(255, 255, 255, 0.1)" />
+    <text x="18" y="30" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="11">CLIENT TIER</text>
+    <text x="18" y="55" fill="#f8fafc" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="14">React Native / Expo</text>
+    <text x="18" y="80" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="12">• Cross-platform UI</text>
+    <text x="18" y="100" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="12">• Issue geo & image tag</text>
+    <text x="18" y="120" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="12">• Role-based portals</text>
+    <text x="18" y="150" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="11">iOS & Android</text>
+
+    <!-- Backend -->
+    <rect x="245" y="0" width="190" height="180" rx="10" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(255, 255, 255, 0.1)" />
+    <text x="18" y="30" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="11">SERVER TIER</text>
+    <text x="18" y="55" fill="#f8fafc" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="14">Node.js + Express</text>
+    <text x="18" y="80" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="12">• Secure REST endpoints</text>
+    <text x="18" y="100" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="12">• JWT authentication</text>
+    <text x="18" y="120" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="12">• Ticket lifecycle state</text>
+    <text x="18" y="150" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="11">Agile API Layer</text>
+
+    <!-- Database -->
+    <rect x="490" y="0" width="190" height="180" rx="10" fill="rgba(30, 41, 59, 0.85)" stroke="rgba(56, 189, 248, 0.4)" />
+    <text x="18" y="30" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="11">DATA TIER</text>
+    <text x="18" y="55" fill="#f8fafc" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="14">MongoDB Atlas</text>
+    <text x="18" y="80" fill="#38bdf8" font-family="'Plus Jakarta Sans', sans-serif" font-size="12">• Maintenance tickets</text>
+    <text x="18" y="100" fill="#38bdf8" font-family="'Plus Jakarta Sans', sans-serif" font-size="12">• User permissions</text>
+    <text x="18" y="120" fill="#38bdf8" font-family="'Plus Jakarta Sans', sans-serif" font-size="12">• Audit log timestamps</text>
+    <text x="18" y="150" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="11">Cloud Database</text>
+
+    <!-- Connectors -->
+    <path d="M 190 90 L 245 90" stroke="#38bdf8" stroke-width="2" stroke-dasharray="3 3" />
+    <path d="M 435 90 L 490 90" stroke="#38bdf8" stroke-width="2" stroke-dasharray="3 3" />
+  </g>
+
+  <!-- Bottom Terminal Status Bar -->
+  <g transform="translate(60, 310)">
+    <rect width="680" height="85" rx="8" fill="rgba(2, 6, 23, 0.9)" stroke="rgba(255, 255, 255, 0.08)" />
+    <circle cx="24" cy="22" r="4" fill="#ef4444" />
+    <circle cx="38" cy="22" r="4" fill="#f59e0b" />
+    <circle cx="52" cy="22" r="4" fill="#10b981" />
+    <text x="74" y="26" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="11">fixnow_api/server.js</text>
+    
+    <text x="24" y="54" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="12">POST /api/v1/tickets/report -> 201 Created | Dispatching technician notification</text>
+    <text x="24" y="74" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="12">> [ACTIVE] Real-time incident workflow running</text>
+  </g>
+</svg>
