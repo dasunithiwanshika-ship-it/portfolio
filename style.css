@@ -848,12 +848,41 @@ img, svg {
 .case-study-img {
   width: 100%;
   height: auto;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
   border-radius: var(--radius-sm);
-  transition: transform var(--transition-smooth);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+}
+
+#project-fixnow .case-study-visual {
+  min-height: 540px;
+  background: radial-gradient(circle at center, rgba(37, 99, 235, 0.18) 0%, rgba(13, 18, 28, 0.95) 70%, #0d121c 100%);
+  padding: 1.75rem 1rem;
+}
+
+.case-study-img.mobile-preview {
+  aspect-ratio: auto;
+  height: auto;
+  max-height: 560px;
+  width: auto;
+  max-width: 95%;
+  object-fit: contain;
+  margin: 0 auto;
+  border-radius: 28px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.8), 0 0 35px rgba(37, 99, 235, 0.25);
+  border: 3px solid rgba(255, 255, 255, 0.16);
 }
 
 .case-study-card:hover .case-study-img {
   transform: scale(1.02);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.55);
+}
+
+.case-study-card:hover .case-study-img.mobile-preview {
+  transform: scale(1.04);
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.9), 0 0 45px rgba(37, 99, 235, 0.35);
 }
 
 .visual-pill-tag {
